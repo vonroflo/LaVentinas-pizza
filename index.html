@@ -19,7 +19,7 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;700&family=Anybody:wght@800;900&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;700&family=Anybody:wght@800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;700&family=Anybody:wght@800;900&display=swap" rel="stylesheet"></noscript>
-<link rel="preload" as="image" href="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&q=55" fetchpriority="high">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=40" fetchpriority="high">
 <style>
 :root {
   --clr-crust: #1a1008;
@@ -209,7 +209,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .deal-card__cta:hover { background: var(--clr-sauce); }
 
 /* CATERING */
-.catering { padding: 100px 0; background: linear-gradient(135deg, rgba(26,16,8,0.9) 0%, rgba(45,30,15,0.88) 100%), url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1280&q=60') center/cover no-repeat; }
+.catering { padding: 100px 0; background: linear-gradient(135deg, rgba(26,16,8,0.9) 0%, rgba(45,30,15,0.88) 100%), url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=40') center/cover no-repeat; }
 .catering__inner { text-align: center; max-width: 700px; margin: 0 auto; }
 .catering__title { font-family: var(--font-display); font-weight: 900; font-size: clamp(2.2rem, 4vw, 3.5rem); color: var(--clr-cream); line-height: 1.1; margin-bottom: 20px; }
 .catering__desc { font-size: 1.1rem; color: rgba(250,245,235,0.88); line-height: 1.6; margin-bottom: 36px; }
@@ -273,7 +273,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .reveal.visible { opacity: 1; transform: translateY(0); }
 
 /* CONTENT VISIBILITY for off-screen sections */
-.section, .featured, .catering { content-visibility: auto; contain-intrinsic-size: auto 600px; }
+.section, .catering { content-visibility: auto; contain-intrinsic-size: auto 600px; }
 
 /* MOBILE NAV (CSS-based) */
 @media (max-width: 768px) {
@@ -305,14 +305,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 <!-- HERO -->
 <main id="main-content">
 <section class="hero" id="home">
-  <div class="hero__bg"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&q=55" alt="" width="800" height="534" fetchpriority="high" decoding="sync"></div><div class="hero__grain"></div><div class="hero__decor"></div>
+  <div class="hero__bg"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=40" alt="" width="600" height="400" fetchpriority="high" decoding="sync"></div><div class="hero__grain"></div><div class="hero__decor"></div>
   <div class="container hero__content">
     <div class="hero__badge">Serving Lakewood Since 2004</div>
     <h1 class="hero__title">Pizza with a<br><em>Desi twist.</em></h1>
     <p class="hero__subtitle">Hand-tossed, made-to-order pizza with our one-of-a-kind homemade sauce. Classic pies and bold Desi fusion flavors — only at LaVentina's on Bellflower Blvd.</p>
     <div class="hero__actions">
-      <a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener" class="btn btn--primary">Order Online <span class="btn__arrow">→</span></a>
-      <a href="#menu" class="btn btn--outline">View Menu <span class="btn__arrow">→</span></a>
+      <a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener" class="btn btn--primary">Order Online <span class="btn__arrow" aria-hidden="true">→</span></a>
+      <a href="#menu" class="btn btn--outline">View Menu <span class="btn__arrow" aria-hidden="true">→</span></a>
     </div>
     <div class="hero__stats">
       <div><div class="hero__stat-number">20+</div><div class="hero__stat-label">Years in Lakewood</div></div>
@@ -325,29 +325,29 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 <!-- TRUST BAR -->
 <div class="trust-bar"><div class="trust-bar__inner">
-  <div class="trust-bar__item"><div class="trust-bar__icon">⭐</div><div><span class="trust-bar__highlight">576 Ratings</span> on Slice</div></div>
-  <div class="trust-bar__item"><div class="trust-bar__icon">🛡️</div><div>Health Score: <span class="trust-bar__highlight">A</span></div></div>
-  <div class="trust-bar__item"><div class="trust-bar__icon">🎉</div><div><span class="trust-bar__highlight">5% Off</span> Online Orders</div></div>
-  <div class="trust-bar__item"><div class="trust-bar__icon">🚗</div><div>Delivery from <span class="trust-bar__highlight">$3.25</span></div></div>
+  <div class="trust-bar__item"><div class="trust-bar__icon" aria-hidden="true">⭐</div><div><span class="trust-bar__highlight">576 Ratings</span> on Slice</div></div>
+  <div class="trust-bar__item"><div class="trust-bar__icon" aria-hidden="true">🛡️</div><div>Health Score: <span class="trust-bar__highlight">A</span></div></div>
+  <div class="trust-bar__item"><div class="trust-bar__icon" aria-hidden="true">🎉</div><div><span class="trust-bar__highlight">5% Off</span> Online Orders</div></div>
+  <div class="trust-bar__item"><div class="trust-bar__icon" aria-hidden="true">🚗</div><div>Delivery from <span class="trust-bar__highlight">$3.25</span></div></div>
 </div></div>
 
 <!-- FEATURED DESI -->
 <section class="featured reveal" id="desi"><div class="container"><div class="featured__grid">
   <div class="featured__image-wrap">
-    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=640&q=65" alt="LaVentina's Desi fusion pizza with fresh cilantro" width="640" height="480" loading="lazy" decoding="async">
-    <div class="featured__badge-float">🌶️ Only at LaVentina's</div>
+    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=640&q=50" alt="LaVentina's Desi fusion pizza with fresh cilantro" width="640" height="480" loading="lazy" decoding="async">
+    <div class="featured__badge-float"><span aria-hidden="true">🌶️</span> Only at LaVentina's</div>
   </div>
   <div class="featured__content">
     <span class="section__eyebrow">Our Signature Line</span>
     <h2 class="section__title">Desi Fusion Pizzas</h2>
     <p class="featured__desc">A spicy &amp; zesty homemade sauce with an Asian-Indian twist, over our seasoned crust and garnished with fresh cilantro. Nothing like it anywhere else in Lakewood.</p>
-    <div class="featured__note">ℹ️ Our Desi sauce does not contain garlic or onions.</div>
+    <div class="featured__note"><span aria-hidden="true">ℹ️</span> Our Desi sauce does not contain garlic or onions.</div>
     <ul class="featured__list">
       <li>Veggie Desi — mushrooms, bell peppers, onions, tomatoes, olives, jalapeños</li>
       <li>Chutney Pizza — Desi sauce topped with chutney and cheese</li>
       <li>Desi Thai Chili — chili, tomatoes, onions, fresh cilantro</li>
     </ul>
-    <a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener" class="btn btn--primary">Order Desi Pizza <span class="btn__arrow">→</span></a>
+    <a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener" class="btn btn--primary">Order Desi Pizza <span class="btn__arrow" aria-hidden="true">→</span></a>
   </div>
 </div></div></section>
 
@@ -371,23 +371,23 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   <!-- PIZZA -->
   <div class="menu-tab-content active" data-content="pizza" role="tabpanel" id="tab-pizza" aria-labelledby="menutab-pizza">
     <div class="menu-grid">
-      <div class="menu-card"><div class="menu-card__tag">Best Seller</div><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=60" alt="Cheese Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Cheese Pizza</h3><p class="menu-card__desc">Classic cheese or create your own pizza with your choice of toppings.</p><div class="menu-card__footer"><span class="menu-card__price">$10.69<span class="menu-card__price-note">medium</span></span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__tag">Best Seller</div><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400&q=60" alt="Veggie Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Veggie Pizza</h3><p class="menu-card__desc">Mushrooms, bell peppers, onions, tomatoes, and olives.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99<span class="menu-card__price-note">medium</span></span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&q=60" alt="Pan Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Pan Pizza</h3><p class="menu-card__desc">Thick, golden-crusted pan pizza baked to perfection.</p><div class="menu-card__footer"><span class="menu-card__price">$15.29<span class="menu-card__price-note">medium</span></span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?w=400&q=60" alt="Personal Veggie Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Personal Veggie Pizza</h3><p class="menu-card__desc">The perfect single-serving size of our classic veggie pie.</p><div class="menu-card__footer"><span class="menu-card__price">$7.69<span class="menu-card__price-note">personal</span></span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
+      <div class="menu-card"><div class="menu-card__tag">Best Seller</div><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=50" alt="Cheese Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Cheese Pizza</h3><p class="menu-card__desc">Classic cheese or create your own pizza with your choice of toppings.</p><div class="menu-card__footer"><span class="menu-card__price">$10.69<span class="menu-card__price-note">medium</span></span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
+      <div class="menu-card"><div class="menu-card__tag">Best Seller</div><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400&q=50" alt="Veggie Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Veggie Pizza</h3><p class="menu-card__desc">Mushrooms, bell peppers, onions, tomatoes, and olives.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99<span class="menu-card__price-note">medium</span></span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
+      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&q=50" alt="Pan Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Pan Pizza</h3><p class="menu-card__desc">Thick, golden-crusted pan pizza baked to perfection.</p><div class="menu-card__footer"><span class="menu-card__price">$15.29<span class="menu-card__price-note">medium</span></span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
+      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?w=400&q=50" alt="Personal Veggie Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Personal Veggie Pizza</h3><p class="menu-card__desc">The perfect single-serving size of our classic veggie pie.</p><div class="menu-card__footer"><span class="menu-card__price">$7.69<span class="menu-card__price-note">personal</span></span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
     </div>
   </div>
 
   <!-- GOURMET -->
   <div class="menu-tab-content" data-content="gourmet" role="tabpanel" id="tab-gourmet" aria-labelledby="menutab-gourmet">
     <div class="menu-grid">
-      <div class="menu-card"><div class="menu-card__tag">Best Seller</div><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=400&q=60" alt="Deluxe Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Deluxe Pizza</h3><p class="menu-card__desc">Pepperoni, sausage, Canadian bacon, mushrooms, bell peppers, onions, and olives.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__tag">Best Seller</div><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=60" alt="BBQ Chicken Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">BBQ Chicken Pizza</h3><p class="menu-card__desc">BBQ sauce, chicken, red onions, topped with mozzarella and garnished with fresh cilantro.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&q=60" alt="Tandoori Chicken Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Tandoori Chicken Pizza</h3><p class="menu-card__desc">Tandoori chicken, Thai chili, garlic, onions, tomatoes, with fresh cilantro and tandoori sauce.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__tag">Best Seller</div><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=400&q=60" alt="Meat Lover's Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Meat Lover's Pizza</h3><p class="menu-card__desc">Pepperoni, sausage, Canadian bacon, meatballs, and chicken.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=400&q=60" alt="Spicy Chicken Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Spicy Chicken Pizza</h3><p class="menu-card__desc">Chicken, pineapple, almonds, tandoori seasoning, and our Desi pizza sauce.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=60" alt="Pastrami Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Pastrami Pizza</h3><p class="menu-card__desc">Pastrami, pickles, mustard, cheese and sauce.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&q=60" alt="Neapolitan Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Neapolitan Pizza</h3><p class="menu-card__desc">Cheese or pepperoni with oregano, olive oil and Romano cheese.</p><div class="menu-card__footer"><span class="menu-card__price">$15.39</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
+      <div class="menu-card"><div class="menu-card__tag">Best Seller</div><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=400&q=50" alt="Deluxe Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Deluxe Pizza</h3><p class="menu-card__desc">Pepperoni, sausage, Canadian bacon, mushrooms, bell peppers, onions, and olives.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
+      <div class="menu-card"><div class="menu-card__tag">Best Seller</div><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=50" alt="BBQ Chicken Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">BBQ Chicken Pizza</h3><p class="menu-card__desc">BBQ sauce, chicken, red onions, topped with mozzarella and garnished with fresh cilantro.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
+      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&q=50" alt="Tandoori Chicken Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Tandoori Chicken Pizza</h3><p class="menu-card__desc">Tandoori chicken, Thai chili, garlic, onions, tomatoes, with fresh cilantro and tandoori sauce.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
+      <div class="menu-card"><div class="menu-card__tag">Best Seller</div><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=400&q=50" alt="Meat Lover's Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Meat Lover's Pizza</h3><p class="menu-card__desc">Pepperoni, sausage, Canadian bacon, meatballs, and chicken.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
+      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=400&q=50" alt="Spicy Chicken Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Spicy Chicken Pizza</h3><p class="menu-card__desc">Chicken, pineapple, almonds, tandoori seasoning, and our Desi pizza sauce.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
+      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=50" alt="Pastrami Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Pastrami Pizza</h3><p class="menu-card__desc">Pastrami, pickles, mustard, cheese and sauce.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
+      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&q=50" alt="Neapolitan Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Neapolitan Pizza</h3><p class="menu-card__desc">Cheese or pepperoni with oregano, olive oil and Romano cheese.</p><div class="menu-card__footer"><span class="menu-card__price">$15.39</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
     </div>
   </div>
 
@@ -397,19 +397,19 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
       <p style="font-size:15px;color:var(--clr-text-light);line-height:1.6;">Our Desi pizzas have a <strong style="color:var(--clr-sauce);">spicy &amp; zesty homemade sauce</strong> with an Asian-Indian twist over our seasoned crust. Sauce does not contain garlic or onions.</p>
     </div>
     <div class="menu-grid">
-      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400&q=60" alt="Veggie Desi Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Veggie Desi Pizza</h3><p class="menu-card__desc">Desi sauce, mushrooms, bell peppers, onions, tomatoes, olives, jalapeños. Garnished with fresh cilantro over seasoned crust.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=60" alt="Chutney Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Chutney Pizza</h3><p class="menu-card__desc">Desi pizza sauce, topped with chutney and cheese over our seasoned crust.</p><div class="menu-card__footer"><span class="menu-card__price">$11.49</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=400&q=60" alt="Desi Thai Chili Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Desi Thai Chili Pizza</h3><p class="menu-card__desc">Desi sauce, chili, tomatoes, and onions. Garnished with fresh cilantro over seasoned crust.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
+      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400&q=50" alt="Veggie Desi Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Veggie Desi Pizza</h3><p class="menu-card__desc">Desi sauce, mushrooms, bell peppers, onions, tomatoes, olives, jalapeños. Garnished with fresh cilantro over seasoned crust.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
+      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=50" alt="Chutney Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Chutney Pizza</h3><p class="menu-card__desc">Desi pizza sauce, topped with chutney and cheese over our seasoned crust.</p><div class="menu-card__footer"><span class="menu-card__price">$11.49</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
+      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=400&q=50" alt="Desi Thai Chili Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Desi Thai Chili Pizza</h3><p class="menu-card__desc">Desi sauce, chili, tomatoes, and onions. Garnished with fresh cilantro over seasoned crust.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
     </div>
   </div>
 
   <!-- APPETIZERS -->
   <div class="menu-tab-content" data-content="appetizers" role="tabpanel" id="tab-appetizers" aria-labelledby="menutab-appetizers">
     <div class="menu-grid">
-      <div class="menu-card"><div class="menu-card__tag">House Fav</div><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=400&q=60" alt="Garlic Cheese Bread" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Garlic Cheese Bread</h3><p class="menu-card__desc">Freshly baked bread loaded with garlic and melted cheese.</p><div class="menu-card__footer"><span class="menu-card__price">$5.19</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__tag">House Fav</div><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?w=400&q=60" alt="Garlic Dots" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Garlic Dots</h3><p class="menu-card__desc">Bite-sized dough balls tossed in garlic butter. Addictive.</p><div class="menu-card__footer"><span class="menu-card__price">$3.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=400&q=60" alt="Chicken Wings" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Chicken Wings</h3><p class="menu-card__desc">Whole chicken wings, oven baked.</p><div class="menu-card__footer"><span class="menu-card__price">$7.49</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&q=60" alt="Pizza Roll" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Pizza Roll</h3><p class="menu-card__desc">Cheese &amp; your choice of three toppings, rolled and baked golden.</p><div class="menu-card__footer"><span class="menu-card__price">$7.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
+      <div class="menu-card"><div class="menu-card__tag">House Fav</div><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=400&q=50" alt="Garlic Cheese Bread" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Garlic Cheese Bread</h3><p class="menu-card__desc">Freshly baked bread loaded with garlic and melted cheese.</p><div class="menu-card__footer"><span class="menu-card__price">$5.19</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
+      <div class="menu-card"><div class="menu-card__tag">House Fav</div><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?w=400&q=50" alt="Garlic Dots" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Garlic Dots</h3><p class="menu-card__desc">Bite-sized dough balls tossed in garlic butter. Addictive.</p><div class="menu-card__footer"><span class="menu-card__price">$3.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
+      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=400&q=50" alt="Chicken Wings" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Chicken Wings</h3><p class="menu-card__desc">Whole chicken wings, oven baked.</p><div class="menu-card__footer"><span class="menu-card__price">$7.49</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
+      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&q=50" alt="Pizza Roll" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Pizza Roll</h3><p class="menu-card__desc">Cheese &amp; your choice of three toppings, rolled and baked golden.</p><div class="menu-card__footer"><span class="menu-card__price">$7.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
     </div>
     <div class="menu-list" style="max-width:680px;margin:32px auto 0;">
       <div class="menu-list-item"><div class="menu-list-item__info"><div class="menu-list-item__name">Garlic Bread</div><div class="menu-list-item__desc">Topped with garlic, herb seasoning, baked to perfection.</div></div><div class="menu-list-item__price">$3.19</div></div>
@@ -446,7 +446,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   </div>
 
   <div style="text-align:center;margin-top:48px;">
-    <a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener" class="btn btn--primary">Order Full Menu on Slice <span class="btn__arrow">→</span></a>
+    <a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener" class="btn btn--primary">Order Full Menu on Slice <span class="btn__arrow" aria-hidden="true">→</span></a>
   </div>
 </div></section>
 
@@ -458,10 +458,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     <p class="section__subtitle">Save on every order. Upgrade sizes for just a couple bucks more.</p>
   </div>
   <div class="deals__grid">
-    <div class="deal-card"><div class="deal-card__ribbon">Popular</div><div class="deal-card__img"><img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=400&q=60" alt="Two medium pizza deal" width="400" height="250" loading="lazy" decoding="async"></div><div class="deal-card__body"><h3 class="deal-card__title">2 Medium 12" Pizzas</h3><p class="deal-card__desc">Two medium pizzas with 3 toppings each.</p><div class="deal-card__fine">+$1.99/ea for Large · +$2.99/ea for XL</div><div class="deal-card__price-row"><span class="deal-card__price">$25.84</span><span class="deal-card__price-note">+ tax</span></div><a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener" class="deal-card__cta">Order This Deal</a></div></div>
-    <div class="deal-card"><div class="deal-card__ribbon">Best Value</div><div class="deal-card__img"><img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&q=60" alt="Two large pizza deal" width="400" height="250" loading="lazy" decoding="async"></div><div class="deal-card__body"><h3 class="deal-card__title">2 Large 14" Pizzas</h3><p class="deal-card__desc">Two large pizzas with 3 toppings each.</p><div class="deal-card__fine">+$2.99/ea to upgrade to XL</div><div class="deal-card__price-row"><span class="deal-card__price">$29.82</span><span class="deal-card__price-note">+ tax</span></div><a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener" class="deal-card__cta">Order This Deal</a></div></div>
-    <div class="deal-card"><div class="deal-card__ribbon">The Spread</div><div class="deal-card__img"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=60" alt="Large combo deal" width="400" height="250" loading="lazy" decoding="async"></div><div class="deal-card__body"><h3 class="deal-card__title">Large Combo</h3><p class="deal-card__desc">1 Large 2-topping pizza, garden salad, 12" garlic bread, and an order of hot wings.</p><div class="deal-card__price-row"><span class="deal-card__price">$35.74</span><span class="deal-card__price-note">+ tax</span></div><a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener" class="deal-card__cta">Order This Deal</a></div></div>
-    <div class="deal-card"><div class="deal-card__ribbon">Carry Out Only</div><div class="deal-card__img"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=60" alt="Carry out deal" width="400" height="250" loading="lazy" decoding="async"></div><div class="deal-card__body"><h3 class="deal-card__title">Large 14" + 1 Topping</h3><p class="deal-card__desc">Large cheese pizza + 1 topping. Carry out only.</p><div class="deal-card__price-row"><span class="deal-card__price">$12.99</span><span class="deal-card__price-note">+ tax</span></div><a href="tel:5628046490" class="deal-card__cta">Call: (562) 804-6490</a></div></div>
+    <div class="deal-card"><div class="deal-card__ribbon">Popular</div><div class="deal-card__img"><img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=400&q=50" alt="Two medium pizza deal" width="400" height="250" loading="lazy" decoding="async"></div><div class="deal-card__body"><h3 class="deal-card__title">2 Medium 12" Pizzas</h3><p class="deal-card__desc">Two medium pizzas with 3 toppings each.</p><div class="deal-card__fine">+$1.99/ea for Large · +$2.99/ea for XL</div><div class="deal-card__price-row"><span class="deal-card__price">$25.84</span><span class="deal-card__price-note">+ tax</span></div><a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener" class="deal-card__cta">Order This Deal</a></div></div>
+    <div class="deal-card"><div class="deal-card__ribbon">Best Value</div><div class="deal-card__img"><img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&q=50" alt="Two large pizza deal" width="400" height="250" loading="lazy" decoding="async"></div><div class="deal-card__body"><h3 class="deal-card__title">2 Large 14" Pizzas</h3><p class="deal-card__desc">Two large pizzas with 3 toppings each.</p><div class="deal-card__fine">+$2.99/ea to upgrade to XL</div><div class="deal-card__price-row"><span class="deal-card__price">$29.82</span><span class="deal-card__price-note">+ tax</span></div><a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener" class="deal-card__cta">Order This Deal</a></div></div>
+    <div class="deal-card"><div class="deal-card__ribbon">The Spread</div><div class="deal-card__img"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=50" alt="Large combo deal" width="400" height="250" loading="lazy" decoding="async"></div><div class="deal-card__body"><h3 class="deal-card__title">Large Combo</h3><p class="deal-card__desc">1 Large 2-topping pizza, garden salad, 12" garlic bread, and an order of hot wings.</p><div class="deal-card__price-row"><span class="deal-card__price">$35.74</span><span class="deal-card__price-note">+ tax</span></div><a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener" class="deal-card__cta">Order This Deal</a></div></div>
+    <div class="deal-card"><div class="deal-card__ribbon">Carry Out Only</div><div class="deal-card__img"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=50" alt="Carry out deal" width="400" height="250" loading="lazy" decoding="async"></div><div class="deal-card__body"><h3 class="deal-card__title">Large 14" + 1 Topping</h3><p class="deal-card__desc">Large cheese pizza + 1 topping. Carry out only.</p><div class="deal-card__price-row"><span class="deal-card__price">$12.99</span><span class="deal-card__price-note">+ tax</span></div><a href="tel:5628046490" class="deal-card__cta">Call: (562) 804-6490</a></div></div>
   </div>
 </div></section>
 
@@ -482,16 +482,16 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 <!-- STORY -->
 <section class="section section--warm reveal" id="story"><div class="container"><div class="story__grid">
   <div class="story__images">
-    <div class="story__img" style="height:400px;"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=480&q=65" alt="LaVentina's Pizza restaurant" width="480" height="400" loading="lazy" decoding="async" style="height:100%;"></div>
-    <div class="story__img"><img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?w=320&q=60" alt="Fresh pizza dough" width="320" height="200" loading="lazy" decoding="async" style="height:200px;"></div>
-    <div class="story__img"><img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=320&q=60" alt="Pizza oven" width="320" height="200" loading="lazy" decoding="async" style="height:200px;"></div>
+    <div class="story__img" style="height:400px;"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=480&q=50" alt="LaVentina's Pizza restaurant" width="480" height="400" loading="lazy" decoding="async" style="height:100%;"></div>
+    <div class="story__img"><img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?w=320&q=50" alt="Fresh pizza dough" width="320" height="200" loading="lazy" decoding="async" style="height:200px;"></div>
+    <div class="story__img"><img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=320&q=50" alt="Pizza oven" width="320" height="200" loading="lazy" decoding="async" style="height:200px;"></div>
   </div>
   <div class="story__content">
     <span class="section__eyebrow">Our Story</span>
     <h2 class="section__title">20 Years on Bellflower Blvd</h2>
     <p class="story__text">LaVentina's has been serving the City of Lakewood for over 20 years. Our homemade sauce is created using only the finest and freshest ingredients. We cut fresh vegetables daily and our dough is prepared fresh every morning.</p>
     <p class="story__text">We hand-toss every pizza, made to order. Our crust is thick and filling, our sauce is unique and deliciously different, and our product is never oily. Give us a chance to satisfy your appetite and you will not be disappointed.</p>
-    <div class="story__highlight"><div class="story__highlight-icon">🍕</div><div class="story__highlight-text"><strong>Fresh dough. Hand-tossed. Made to order.</strong>One of the best sauces you'll find anywhere — that's not just us talking, that's 576 five-star ratings on Slice.</div></div>
+    <div class="story__highlight"><div class="story__highlight-icon" aria-hidden="true">🍕</div><div class="story__highlight-text"><strong>Fresh dough. Hand-tossed. Made to order.</strong>One of the best sauces you'll find anywhere — that's not just us talking, that's 576 five-star ratings on Slice.</div></div>
   </div>
 </div></div></section>
 
@@ -520,14 +520,17 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   <div class="location__grid">
     <div class="location__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.5!2d-118.132!3d33.853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd2df3aa4791f9%3A0x4a4a4a4a4a4a4a4a!2s5806+Bellflower+Blvd%2C+Lakewood%2C+CA+90713!5e0!3m2!1sen!2sus!4v1" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="LaVentina's Pizza location"></iframe></div>
     <div class="location__info">
-      <div class="location__detail"><div class="location__detail-icon">📍</div><div><div class="location__detail-label">Address</div><div class="location__detail-value">5806 Bellflower Blvd<br>Lakewood, CA 90713</div></div></div>
-      <div class="location__detail"><div class="location__detail-icon">📞</div><div><div class="location__detail-label">Phone</div><div class="location__detail-value"><a href="tel:5628046490">(562) 804-6490</a></div></div></div>
-      <div class="location__detail"><div class="location__detail-icon">🕐</div><div><div class="location__detail-label">Hours</div><ul class="location__hours-list"><li><span>Sunday – Thursday</span><span>11:00 AM – 8:00 PM</span></li><li><span>Friday – Saturday</span><span>11:00 AM – 9:00 PM</span></li></ul></div></div>
-      <div class="location__detail"><div class="location__detail-icon">🚗</div><div><div class="location__detail-label">Delivery</div><div class="location__detail-value">Available via Slice</div></div></div>
+      <div class="location__detail"><div class="location__detail-icon" aria-hidden="true">📍</div><div><div class="location__detail-label">Address</div><div class="location__detail-value">5806 Bellflower Blvd<br>Lakewood, CA 90713</div></div></div>
+      <div class="location__detail"><div class="location__detail-icon" aria-hidden="true">📞</div><div><div class="location__detail-label">Phone</div><div class="location__detail-value"><a href="tel:5628046490">(562) 804-6490</a></div></div></div>
+      <div class="location__detail"><div class="location__detail-icon" aria-hidden="true">🕐</div><div><div class="location__detail-label">Hours</div><ul class="location__hours-list"><li><span>Sunday – Thursday</span><span>11:00 AM – 8:00 PM</span></li><li><span>Friday – Saturday</span><span>11:00 AM – 9:00 PM</span></li></ul></div></div>
+      <div class="location__detail"><div class="location__detail-icon" aria-hidden="true">🚗</div><div><div class="location__detail-label">Delivery</div><div class="location__detail-value">Available via Slice</div></div></div>
       <div class="location__delivery-note"><strong>Delivery:</strong> $3.25 delivery charge · $10.50 minimum + tax. Order on Slice for 5% off online orders.</div>
     </div>
   </div>
 </div></section>
+
+<!-- FLOAT ORDER -->
+<a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener" class="float-order"><span class="float-order__icon" aria-hidden="true">🍕</span> Order on Slice — 5% Off</a>
 
 </main>
 <!-- FOOTER -->
@@ -543,9 +546,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     <div class="footer__badges"><span class="footer__badge">Health Score A</span><span class="footer__badge" style="background:rgba(245,200,66,0.15);color:var(--clr-cheese);">Est. 2004</span></div>
   </div>
 </div></footer>
-
-<!-- FLOAT ORDER -->
-<a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener" class="float-order"><span class="float-order__icon">🍕</span> Order on Slice — 5% Off</a>
 
 <script>
 // Nav scroll — throttled with rAF
