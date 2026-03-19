@@ -73,6 +73,11 @@
       font-size: 16px;
     }
 
+    /* Offset anchor links for fixed nav */
+    section[id] {
+      scroll-margin-top: 72px;
+    }
+
     body {
       font-family: var(--font-body);
       color: var(--clr-text);
@@ -120,6 +125,12 @@
       overflow: hidden;
       clip: rect(0, 0, 0, 0);
       border: 0;
+    }
+
+    @media (max-width: 768px) {
+      .hide-mobile {
+        display: none !important;
+      }
     }
 
     .skip-link {
@@ -1975,7 +1986,7 @@
           and bold Desi fusion flavors — only at LaVentina's on Bellflower Blvd.</p>
         <div class="hero__actions">
           <a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank"
-            rel="noopener" class="btn btn--primary">Order On Slice <span class="btn__arrow"
+            rel="noopener" class="btn btn--primary hide-mobile">Order On Slice <span class="btn__arrow"
               aria-hidden="true">→</span></a>
           <a href="#menu" class="btn btn--outline">View Menu <span class="btn__arrow" aria-hidden="true">→</span></a>
         </div>
