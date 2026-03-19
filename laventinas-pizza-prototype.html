@@ -1,575 +1,2540 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LaVentina's Pizza — Lakewood's Home for Desi Fusion Pizza Since 2004</title>
-<meta name="description" content="LaVentina's Pizza in Lakewood, CA — 20+ years of handcrafted pizzas featuring our signature Desi fusion line with tandoori chicken, chutney & Thai chili. Order online for pickup or delivery.">
-<meta name="robots" content="index, follow, max-image-preview:large">
-<link rel="canonical" href="https://la-ventinas-pizza.vercel.app/">
-<meta property="og:title" content="LaVentina's Pizza — Lakewood's Home for Desi Fusion Pizza Since 2004">
-<meta property="og:description" content="Hand-tossed, made-to-order pizza with our one-of-a-kind homemade sauce. Classic pies and bold Desi fusion flavors.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://la-ventinas-pizza.vercel.app/">
-<meta property="og:image" content="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1200&q=80">
-<meta name="theme-color" content="#1a1008">
-<link rel="preconnect" href="https://images.unsplash.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;700&family=Anybody:wght@800;900&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;700&family=Anybody:wght@800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;700&family=Anybody:wght@800;900&display=swap" rel="stylesheet"></noscript>
-<link rel="preload" as="image" href="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=40" fetchpriority="high">
-<style>
-:root {
-  --clr-crust: #1a1008;
-  --clr-char: #2d1e0f;
-  --clr-sauce: #c4371b;
-  --clr-sauce-deep: #9e2c15;
-  --clr-sauce-light: #e8512f;
-  --clr-cheese: #f5c842;
-  --clr-cheese-pale: #fce89a;
-  --clr-basil: #3d7a3e;
-  --clr-basil-light: #5fa05f;
-  --clr-cream: #faf5eb;
-  --clr-warm-white: #fefcf7;
-  --clr-warm-gray: #6d6054;
-  --clr-text: #2d2418;
-  --clr-text-light: #574a3c;
-  --font-display: 'Playfair Display', Georgia, serif;
-  --font-body: 'DM Sans', -apple-system, sans-serif;
-  --font-accent: 'Anybody', sans-serif;
-  --shadow-soft: 0 4px 24px rgba(26,16,8,0.08);
-  --shadow-medium: 0 8px 40px rgba(26,16,8,0.12);
-  --shadow-heavy: 0 16px 64px rgba(26,16,8,0.18);
-  --radius-sm: 8px; --radius-md: 16px; --radius-lg: 24px; --radius-xl: 40px;
-}
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; font-size: 16px; }
-body { font-family: var(--font-body); color: var(--clr-text); background: var(--clr-warm-white); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
-img { max-width: 100%; height: auto; display: block; }
-a { color: inherit; text-decoration: none; }
-button { cursor: pointer; border: none; background: none; font-family: inherit; }
-:focus-visible { outline: 2px solid var(--clr-sauce); outline-offset: 2px; }
-.container { width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 24px; }
-.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
-.skip-link { position: absolute; top: -100%; left: 16px; padding: 8px 16px; background: var(--clr-sauce); color: white; z-index: 9999; border-radius: 0 0 8px 8px; font-weight: 700; font-size: 14px; }
-.skip-link:focus { top: 0; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LaVentina's Pizza — Lakewood's Home for Desi Fusion Pizza Since 2004</title>
+  <meta name="description"
+    content="LaVentina's Pizza in Lakewood, CA — 20+ years of handcrafted pizzas featuring our signature Desi fusion line with tandoori chicken, chutney & Thai chili. Order online for pickup or delivery.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://la-ventinas-pizza.vercel.app/">
+  <meta property="og:title" content="LaVentina's Pizza — Lakewood's Home for Desi Fusion Pizza Since 2004">
+  <meta property="og:description"
+    content="Hand-tossed, made-to-order pizza with our one-of-a-kind homemade sauce. Classic pies and bold Desi fusion flavors.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://la-ventinas-pizza.vercel.app/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1200&q=80">
+  <meta name="theme-color" content="#1a1008">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;700&family=Anybody:wght@800;900&display=swap">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;700&family=Anybody:wght@800;900&display=swap"
+    rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;700&family=Anybody:wght@800;900&display=swap"
+      rel="stylesheet">
+  </noscript>
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=40"
+    fetchpriority="high">
+  <style>
+    :root {
+      --clr-crust: #1a1008;
+      --clr-char: #2d1e0f;
+      --clr-sauce: #c4371b;
+      --clr-sauce-deep: #9e2c15;
+      --clr-sauce-light: #e8512f;
+      --clr-cheese: #f5c842;
+      --clr-cheese-pale: #fce89a;
+      --clr-basil: #3d7a3e;
+      --clr-basil-light: #5fa05f;
+      --clr-cream: #faf5eb;
+      --clr-warm-white: #fefcf7;
+      --clr-warm-gray: #6d6054;
+      --clr-text: #2d2418;
+      --clr-text-light: #574a3c;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'DM Sans', -apple-system, sans-serif;
+      --font-accent: 'Anybody', sans-serif;
+      --shadow-soft: 0 4px 24px rgba(26, 16, 8, 0.08);
+      --shadow-medium: 0 8px 40px rgba(26, 16, 8, 0.12);
+      --shadow-heavy: 0 16px 64px rgba(26, 16, 8, 0.18);
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-xl: 40px;
+    }
 
-/* NAV */
-.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(26,16,8,0.92); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(245,200,66,0.1); transition: all 0.4s ease; }
-.nav.scrolled { background: rgba(26,16,8,0.97); }
-.nav__inner { display: flex; align-items: center; justify-content: space-between; height: 72px; max-width: 1280px; margin: 0 auto; padding: 0 24px; }
-.nav__logo { display: flex; align-items: center; gap: 12px; }
-.nav__logo-icon { width: 44px; height: 44px; background: var(--clr-sauce); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-accent); font-weight: 900; font-size: 20px; color: var(--clr-cheese); line-height: 1; }
-.nav__logo-text { font-family: var(--font-display); font-weight: 700; font-size: 22px; color: var(--clr-cream); letter-spacing: -0.02em; }
-.nav__logo-text span { color: var(--clr-cheese); }
-.nav__links { display: flex; align-items: center; gap: 32px; list-style: none; }
-.nav__links a { font-size: 14px; font-weight: 500; color: rgba(250,245,235,0.85); text-transform: uppercase; letter-spacing: 0.08em; transition: color 0.3s ease; position: relative; }
-.nav__links a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--clr-cheese); transition: width 0.3s ease; }
-.nav__links a:hover { color: var(--clr-cream); }
-.nav__links a:hover::after { width: 100%; }
-.nav__order-btn { background: var(--clr-sauce); color: var(--clr-cream); font-weight: 700; font-size: 14px; padding: 10px 24px; border-radius: 100px; text-transform: uppercase; letter-spacing: 0.06em; transition: all 0.3s ease; box-shadow: 0 4px 16px rgba(196,55,27,0.3); }
-.nav__order-btn:hover { background: var(--clr-sauce-light); transform: translateY(-1px); box-shadow: 0 6px 24px rgba(196,55,27,0.4); }
-.nav__toggle { display: none; flex-direction: column; gap: 5px; padding: 8px; }
-.nav__toggle span { width: 24px; height: 2px; background: var(--clr-cream); transition: all 0.3s ease; }
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-/* HERO */
-.hero { position: relative; min-height: 100vh; display: flex; align-items: center; background: var(--clr-crust); overflow: hidden; }
-.hero__bg { position: absolute; inset: 0; }
-.hero__bg img { width: 100%; height: 100%; object-fit: cover; }
-.hero__bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(26,16,8,0.85) 0%, rgba(26,16,8,0.4) 50%, rgba(26,16,8,0.7) 100%); }
-.hero__grain { position: absolute; inset: 0; opacity: 0.04; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E"); }
-.hero__content { position: relative; z-index: 2; padding: 120px 0 80px; }
-.hero__badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(245,200,66,0.12); border: 1px solid rgba(245,200,66,0.25); padding: 8px 20px; border-radius: 100px; margin-bottom: 32px; font-size: 13px; font-weight: 600; color: var(--clr-cheese); text-transform: uppercase; letter-spacing: 0.1em; animation: fadeInUp 0.8s ease both; }
-.hero__badge::before { content: '★'; font-size: 14px; }
-.hero__title { font-family: var(--font-display); font-weight: 900; font-size: clamp(3rem, 8vw, 6.5rem); line-height: 0.95; color: var(--clr-cream); max-width: 800px; letter-spacing: -0.03em; margin-bottom: 24px; animation: fadeInUp 0.8s ease 0.1s both; }
-.hero__title em { font-style: italic; color: var(--clr-cheese); display: inline-block; }
-.hero__subtitle { font-size: clamp(1.1rem, 2vw, 1.35rem); color: rgba(250,245,235,0.88); max-width: 560px; line-height: 1.6; margin-bottom: 40px; animation: fadeInUp 0.8s ease 0.2s both; }
-.hero__actions { display: flex; gap: 16px; flex-wrap: wrap; animation: fadeInUp 0.8s ease 0.3s both; }
-.btn { display: inline-flex; align-items: center; gap: 10px; padding: 16px 36px; border-radius: 100px; font-weight: 700; font-size: 16px; text-transform: uppercase; letter-spacing: 0.04em; transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1); }
-.btn--primary { background: var(--clr-sauce); color: var(--clr-cream); box-shadow: 0 8px 32px rgba(196,55,27,0.35); }
-.btn--primary:hover { background: var(--clr-sauce-light); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(196,55,27,0.45); }
-.btn--outline { border: 2px solid rgba(250,245,235,0.3); color: var(--clr-cream); background: rgba(250,245,235,0.05); }
-.btn--outline:hover { border-color: var(--clr-cheese); color: var(--clr-cheese); background: rgba(245,200,66,0.08); }
-.btn__arrow { font-size: 20px; transition: transform 0.3s ease; }
-.btn:hover .btn__arrow { transform: translateX(4px); }
-.hero__stats { display: flex; gap: 48px; margin-top: 64px; padding-top: 40px; border-top: 1px solid rgba(250,245,235,0.1); animation: fadeInUp 0.8s ease 0.5s both; }
-.hero__stat-number { font-family: var(--font-accent); font-weight: 900; font-size: 2.5rem; color: var(--clr-cheese); line-height: 1; }
-.hero__stat-label { font-size: 13px; color: rgba(250,245,235,0.78); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 4px; }
-.hero__decor { position: absolute; right: -5%; top: 50%; transform: translateY(-50%); width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(196,55,27,0.15) 0%, transparent 70%); z-index: 1; animation: pulse 6s ease-in-out infinite; }
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
 
-/* TRUST BAR */
-.trust-bar { background: var(--clr-crust); padding: 20px 0; border-top: 1px solid rgba(245,200,66,0.08); }
-.trust-bar__inner { display: flex; align-items: center; justify-content: center; gap: 48px; flex-wrap: wrap; }
-.trust-bar__item { display: flex; align-items: center; gap: 10px; font-size: 14px; color: rgba(250,245,235,0.82); }
-.trust-bar__icon { width: 32px; height: 32px; border-radius: 50%; background: rgba(245,200,66,0.1); display: flex; align-items: center; justify-content: center; font-size: 16px; }
-.trust-bar__highlight { color: var(--clr-cream); font-weight: 700; }
+    body {
+      font-family: var(--font-body);
+      color: var(--clr-text);
+      background: var(--clr-warm-white);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
 
-/* SECTIONS */
-.section { padding: 100px 0; }
-.section--cream { background: var(--clr-cream); }
-.section--warm { background: var(--clr-warm-white); }
-.section--dark { background: var(--clr-crust); color: var(--clr-cream); }
-.section__header { text-align: center; margin-bottom: 64px; }
-.section__eyebrow { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: var(--clr-sauce); margin-bottom: 16px; display: block; }
-.section--dark .section__eyebrow { color: var(--clr-cheese); }
-.section__title { font-family: var(--font-display); font-weight: 900; font-size: clamp(2.2rem, 4vw, 3.5rem); line-height: 1.05; letter-spacing: -0.02em; }
-.section__subtitle { font-size: 1.1rem; color: var(--clr-text-light); max-width: 600px; margin: 16px auto 0; line-height: 1.6; }
-.section--dark .section__subtitle { color: rgba(250,245,235,0.82); }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
 
-/* FEATURED */
-.featured { padding: 120px 0; background: linear-gradient(180deg, var(--clr-warm-white) 0%, var(--clr-cream) 100%); }
-.featured__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-.featured__image-wrap { position: relative; border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 4/3; box-shadow: var(--shadow-heavy); }
-.featured__image-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 8s ease; }
-.featured__image-wrap:hover img { transform: scale(1.05); }
-.featured__badge-float { position: absolute; top: 24px; left: 24px; background: var(--clr-sauce); color: var(--clr-cream); padding: 10px 20px; border-radius: 100px; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.06em; box-shadow: 0 4px 20px rgba(196,55,27,0.3); }
-.featured__content .section__eyebrow { text-align: left; }
-.featured__content .section__title { text-align: left; margin-bottom: 20px; }
-.featured__desc { font-size: 1.05rem; line-height: 1.7; color: var(--clr-text-light); margin-bottom: 32px; }
-.featured__note { font-size: 0.9rem; color: var(--clr-basil); font-weight: 500; background: rgba(61,122,62,0.08); padding: 12px 16px; border-radius: var(--radius-sm); margin-bottom: 24px; border-left: 3px solid var(--clr-basil); }
-.featured__list { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 40px; }
-.featured__list li { display: flex; align-items: center; gap: 12px; font-size: 15px; font-weight: 500; }
-.featured__list li::before { content: '🌶️'; font-size: 18px; }
-.featured__list li:nth-child(2)::before { content: '🧀'; }
-.featured__list li:nth-child(3)::before { content: '🔥'; }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-/* MENU */
-.menu-tabs { display: flex; justify-content: center; gap: 8px; margin-bottom: 48px; flex-wrap: wrap; }
-.menu-tab { padding: 10px 28px; border-radius: 100px; font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; border: 2px solid transparent; color: var(--clr-text); background: transparent; transition: all 0.3s ease; }
-.menu-tab:hover { border-color: var(--clr-sauce); color: var(--clr-sauce); }
-.menu-tab.active { background: var(--clr-sauce); color: var(--clr-cream); border-color: var(--clr-sauce); }
-.menu-tab-content { display: none; }
-.menu-tab-content.active { display: block; }
-.menu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 28px; }
-.menu-card { background: white; border-radius: var(--radius-md); overflow: hidden; transition: all 0.4s cubic-bezier(0.4,0,0.2,1); box-shadow: var(--shadow-soft); position: relative; }
-.menu-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-heavy); }
-.menu-card__img { aspect-ratio: 16/10; overflow: hidden; }
-.menu-card__img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
-.menu-card:hover .menu-card__img img { transform: scale(1.08); }
-.menu-card__body { padding: 20px 24px 24px; }
-.menu-card__name { font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; margin-bottom: 6px; }
-.menu-card__desc { font-size: 14px; color: var(--clr-text-light); line-height: 1.5; margin-bottom: 16px; }
-.menu-card__footer { display: flex; justify-content: space-between; align-items: center; }
-.menu-card__price { font-family: var(--font-accent); font-weight: 800; font-size: 1.3rem; color: var(--clr-sauce); }
-.menu-card__price-note { font-size: 11px; color: var(--clr-text-light); font-weight: 400; display: block; }
-.menu-card__add { width: 40px; height: 40px; border-radius: 50%; background: var(--clr-sauce); color: white; display: flex; align-items: center; justify-content: center; font-size: 22px; line-height: 1; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(196,55,27,0.25); }
-.menu-card__add:hover { background: var(--clr-sauce-light); transform: scale(1.1); }
-.menu-card__tag { position: absolute; top: 12px; right: 12px; background: var(--clr-cheese); color: var(--clr-crust); padding: 4px 12px; border-radius: 100px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
-.menu-list { display: flex; flex-direction: column; gap: 0; }
-.menu-list-item { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid rgba(45,36,24,0.08); transition: background 0.2s ease; }
-.menu-list-item:last-child { border-bottom: none; }
-.menu-list-item:hover { background: rgba(196,55,27,0.02); padding-left: 8px; padding-right: 8px; border-radius: var(--radius-sm); }
-.menu-list-item__info { flex: 1; padding-right: 20px; }
-.menu-list-item__name { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; margin-bottom: 4px; }
-.menu-list-item__desc { font-size: 13px; color: var(--clr-text-light); line-height: 1.4; }
-.menu-list-item__price { font-family: var(--font-accent); font-weight: 800; font-size: 1.15rem; color: var(--clr-sauce); white-space: nowrap; }
+    button {
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-family: inherit;
+    }
 
-/* REVIEWS */
-.reviews__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.review-card { background: rgba(250,245,235,0.06); border: 1px solid rgba(250,245,235,0.08); border-radius: var(--radius-md); padding: 32px; transition: all 0.3s ease; }
-.review-card:hover { background: rgba(250,245,235,0.1); border-color: rgba(245,200,66,0.2); transform: translateY(-4px); }
-.review-card__stars { color: var(--clr-cheese); font-size: 18px; letter-spacing: 4px; margin-bottom: 16px; }
-.review-card__text { font-size: 15px; line-height: 1.65; color: rgba(250,245,235,0.9); margin-bottom: 20px; font-style: italic; }
-.review-card__author { display: flex; align-items: center; gap: 12px; }
-.review-card__avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--clr-sauce); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px; color: var(--clr-cream); }
-.review-card__name { font-weight: 600; font-size: 14px; color: var(--clr-cream); }
-.review-card__source { font-size: 12px; color: rgba(250,245,235,0.78); }
+    :focus-visible {
+      outline: 2px solid var(--clr-sauce);
+      outline-offset: 2px;
+    }
 
-/* STORY */
-.story__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-.story__images { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.story__img { border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-medium); }
-.story__img:first-child { grid-row: span 2; }
-.story__img img { width: 100%; height: 100%; object-fit: cover; }
-.story__content .section__eyebrow { text-align: left; }
-.story__content .section__title { text-align: left; margin-bottom: 24px; }
-.story__text { font-size: 1.05rem; line-height: 1.75; color: var(--clr-text-light); margin-bottom: 20px; }
-.story__highlight { background: linear-gradient(135deg, var(--clr-sauce), var(--clr-sauce-deep)); color: var(--clr-cream); padding: 28px 32px; border-radius: var(--radius-md); margin-top: 32px; display: flex; align-items: center; gap: 20px; }
-.story__highlight-icon { font-size: 40px; flex-shrink: 0; }
-.story__highlight-text { font-size: 15px; line-height: 1.6; }
-.story__highlight-text strong { display: block; font-size: 18px; margin-bottom: 4px; }
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
 
-/* DEALS */
-.deals__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; }
-.deal-card { background: white; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-medium); transition: all 0.4s ease; position: relative; }
-.deal-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-heavy); }
-.deal-card__ribbon { position: absolute; top: 20px; left: -8px; background: var(--clr-sauce); color: white; padding: 6px 20px 6px 16px; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; z-index: 2; clip-path: polygon(0 0, 100% 0, 92% 100%, 0 100%); }
-.deal-card__img { aspect-ratio: 16/9; overflow: hidden; }
-.deal-card__img img { width: 100%; height: 100%; object-fit: cover; }
-.deal-card__body { padding: 24px; }
-.deal-card__title { font-family: var(--font-display); font-weight: 700; font-size: 1.3rem; margin-bottom: 8px; }
-.deal-card__desc { font-size: 14px; color: var(--clr-text-light); line-height: 1.5; margin-bottom: 12px; }
-.deal-card__fine { font-size: 12px; color: var(--clr-text-light); margin-bottom: 16px; font-style: italic; }
-.deal-card__price-row { display: flex; align-items: baseline; gap: 12px; margin-bottom: 16px; }
-.deal-card__price { font-family: var(--font-accent); font-weight: 900; font-size: 2rem; color: var(--clr-sauce); }
-.deal-card__price-note { font-size: 13px; color: var(--clr-text-light); }
-.deal-card__cta { display: block; width: 100%; padding: 14px; background: var(--clr-crust); color: var(--clr-cream); text-align: center; border-radius: var(--radius-sm); font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.06em; transition: all 0.3s ease; }
-.deal-card__cta:hover { background: var(--clr-sauce); }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
 
-/* CATERING */
-.catering { padding: 100px 0; background: linear-gradient(135deg, rgba(26,16,8,0.9) 0%, rgba(45,30,15,0.88) 100%), url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=40') center/cover no-repeat; }
-.catering__inner { text-align: center; max-width: 700px; margin: 0 auto; }
-.catering__title { font-family: var(--font-display); font-weight: 900; font-size: clamp(2.2rem, 4vw, 3.5rem); color: var(--clr-cream); line-height: 1.1; margin-bottom: 20px; }
-.catering__desc { font-size: 1.1rem; color: rgba(250,245,235,0.88); line-height: 1.6; margin-bottom: 36px; }
-.catering__features { display: flex; justify-content: center; gap: 40px; margin-bottom: 40px; flex-wrap: wrap; }
-.catering__feature { display: flex; align-items: center; gap: 8px; font-size: 15px; color: var(--clr-cheese); font-weight: 500; }
-.catering__feature::before { content: '✓'; font-weight: 700; font-size: 18px; }
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 16px;
+      padding: 8px 16px;
+      background: var(--clr-sauce);
+      color: white;
+      z-index: 9999;
+      border-radius: 0 0 8px 8px;
+      font-weight: 700;
+      font-size: 14px;
+    }
 
-/* LOCATION */
-.location__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
-.location__map { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-heavy); aspect-ratio: 4/3; background: #e8e0d4; }
-.location__map iframe { width: 100%; height: 100%; border: 0; }
-.location__info { padding: 20px 0; }
-.location__detail { display: flex; gap: 16px; padding: 20px 0; border-bottom: 1px solid rgba(45,36,24,0.08); }
-.location__detail:last-child { border-bottom: none; }
-.location__detail-icon { width: 48px; height: 48px; border-radius: 50%; background: rgba(196,55,27,0.08); display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; }
-.location__detail-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--clr-text-light); margin-bottom: 4px; font-weight: 600; }
-.location__detail-value { font-size: 16px; font-weight: 600; line-height: 1.5; }
-.location__hours-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-.location__hours-list li { display: flex; justify-content: space-between; font-size: 14px; color: var(--clr-text); }
-.location__hours-list li span:first-child { font-weight: 600; color: var(--clr-text); }
-.location__delivery-note { margin-top: 16px; padding: 12px 16px; background: rgba(196,55,27,0.06); border-radius: var(--radius-sm); font-size: 13px; color: var(--clr-text); line-height: 1.5; }
-.location__delivery-note strong { color: var(--clr-sauce); }
+    .skip-link:focus {
+      top: 0;
+    }
 
-/* EMAIL */
-.email-capture { background: var(--clr-cheese); padding: 60px 0; }
-.email-capture__inner { display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
-.email-capture__text h3 { font-family: var(--font-display); font-weight: 900; font-size: 1.8rem; color: var(--clr-crust); margin-bottom: 4px; }
-.email-capture__text p { font-size: 15px; color: var(--clr-char); }
-.email-capture__form { display: flex; gap: 12px; flex: 1; max-width: 480px; }
-.email-capture__input { flex: 1; padding: 14px 20px; border: 2px solid rgba(26,16,8,0.15); border-radius: 100px; font-family: var(--font-body); font-size: 15px; background: white; transition: border-color 0.3s ease; }
-.email-capture__input:focus { outline: 2px solid var(--clr-sauce); outline-offset: 2px; border-color: var(--clr-sauce); }
-.email-capture__input::placeholder { color: var(--clr-warm-gray); }
-.email-capture__submit { padding: 14px 32px; background: var(--clr-crust); color: var(--clr-cream); border-radius: 100px; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.06em; white-space: nowrap; transition: all 0.3s ease; }
-.email-capture__submit:hover { background: var(--clr-sauce); }
+    /* NAV */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(26, 16, 8, 0.92);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(245, 200, 66, 0.1);
+      transition: all 0.4s ease;
+    }
 
-/* FOOTER */
-.footer { background: var(--clr-crust); padding: 64px 0 32px; color: rgba(250,245,235,0.82); }
-.footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
-.footer__brand-desc { font-size: 14px; line-height: 1.7; margin-top: 16px; max-width: 320px; }
-.footer__heading { font-family: var(--font-display); font-weight: 700; font-size: 16px; color: var(--clr-cream); margin-bottom: 20px; }
-.footer__links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-.footer__links a { font-size: 14px; transition: color 0.3s ease; }
-.footer__links a:hover { color: var(--clr-cheese); }
-.footer__social { display: flex; gap: 12px; margin-top: 16px; }
-.footer__social a { width: 40px; height: 40px; border-radius: 50%; background: rgba(250,245,235,0.08); display: flex; align-items: center; justify-content: center; font-size: 16px; transition: all 0.3s ease; }
-.footer__social a:hover { background: var(--clr-sauce); color: var(--clr-cream); }
-.footer__bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 32px; border-top: 1px solid rgba(250,245,235,0.08); font-size: 13px; flex-wrap: wrap; gap: 16px; }
-.footer__badges { display: flex; gap: 16px; align-items: center; }
-.footer__badge { padding: 4px 12px; border-radius: 4px; background: rgba(61,122,62,0.15); color: var(--clr-basil-light); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+    .nav.scrolled {
+      background: rgba(26, 16, 8, 0.97);
+    }
 
-/* FLOAT */
-.float-order { position: fixed; bottom: 24px; right: 24px; z-index: 999; background: var(--clr-sauce); color: white; padding: 16px 32px; border-radius: 100px; font-weight: 700; font-size: 15px; text-transform: uppercase; letter-spacing: 0.04em; box-shadow: 0 8px 32px rgba(196,55,27,0.4); display: flex; align-items: center; gap: 10px; transition: all 0.35s cubic-bezier(0.4,0,0.2,1); animation: bounceIn 0.6s ease 1s both; }
-.float-order:hover { background: var(--clr-sauce-light); transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 40px rgba(196,55,27,0.5); }
-.float-order__icon { font-size: 20px; }
+    .nav__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
 
-/* ANIMATIONS */
-@keyframes fadeInUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
-@keyframes bounceIn { 0% { opacity: 0; transform: scale(0.5) translateY(20px); } 60% { opacity: 1; transform: scale(1.05) translateY(-4px); } 100% { transform: scale(1) translateY(0); } }
-@keyframes pulse { 0%, 100% { transform: translateY(-50%) scale(1); opacity: 0.3; } 50% { transform: translateY(-50%) scale(1.1); opacity: 0.5; } }
-.reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.7s ease, transform 0.7s ease; }
-.reveal.visible { opacity: 1; transform: translateY(0); }
+    .nav__logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
 
-/* CONTENT VISIBILITY for off-screen sections */
-.section, .catering { content-visibility: auto; contain-intrinsic-size: auto 600px; }
+    .nav__logo-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--clr-sauce);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-accent);
+      font-weight: 900;
+      font-size: 20px;
+      color: var(--clr-cheese);
+      line-height: 1;
+    }
 
-/* MOBILE NAV (CSS-based) */
-@media (max-width: 768px) {
-  .nav__links { display: none; position: absolute; top: 72px; left: 0; right: 0; flex-direction: column; background: rgba(26,16,8,0.98); padding: 24px; gap: 20px; z-index: 1000; }
-  .nav__links.open { display: flex; }
-  .nav__toggle { display: flex; }
-}
+    .nav__logo-text {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 22px;
+      color: var(--clr-cream);
+      letter-spacing: -0.02em;
+    }
 
-/* RESPONSIVE */
-@media (max-width: 1024px) { .featured__grid, .story__grid, .location__grid { grid-template-columns: 1fr; gap: 48px; } .reviews__grid { grid-template-columns: 1fr 1fr; } .footer__grid { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 768px) { .hero__stats { gap: 24px; flex-wrap: wrap; } .hero__stat-number { font-size: 2rem; } .reviews__grid { grid-template-columns: 1fr; } .menu-grid { grid-template-columns: 1fr 1fr; } .trust-bar__inner { gap: 24px; } .email-capture__inner { flex-direction: column; text-align: center; } .email-capture__form { max-width: 100%; } .footer__grid { grid-template-columns: 1fr; } .hero__decor { display: none; } .float-order { bottom: 16px; right: 16px; padding: 14px 24px; font-size: 14px; } .section { padding: 64px 0; } .featured { padding: 80px 0; } .section__title { font-size: clamp(1.8rem, 5vw, 2.5rem); } .hero__title { font-size: clamp(2.4rem, 7vw, 4rem); } .deals__grid { grid-template-columns: 1fr 1fr; } .story__images { gap: 8px; } .location__map { aspect-ratio: 16/9; } }
-@media (max-width: 480px) { .menu-grid { grid-template-columns: 1fr; } .hero__actions { flex-direction: column; } .btn { width: 100%; justify-content: center; } .catering__features { flex-direction: column; align-items: center; } .deals__grid { grid-template-columns: 1fr; } .trust-bar__inner { flex-direction: column; gap: 16px; text-align: center; } .trust-bar__item { justify-content: center; } .hero__stats { gap: 16px; } .hero__stats > div { flex: 1 1 40%; } .container { padding: 0 16px; } }
-</style>
+    .nav__logo-text span {
+      color: var(--clr-cheese);
+    }
+
+    .nav__links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav__links a {
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(250, 245, 235, 0.85);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      transition: color 0.3s ease;
+      position: relative;
+    }
+
+    .nav__links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--clr-cheese);
+      transition: width 0.3s ease;
+    }
+
+    .nav__links a:hover {
+      color: var(--clr-cream);
+    }
+
+    .nav__links a:hover::after {
+      width: 100%;
+    }
+
+    .nav__order-btn {
+      background: var(--clr-sauce);
+      color: var(--clr-cream);
+      font-weight: 700;
+      font-size: 14px;
+      padding: 10px 24px;
+      border-radius: 100px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 16px rgba(196, 55, 27, 0.3);
+    }
+
+    .nav__order-btn:hover {
+      background: var(--clr-sauce-light);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 24px rgba(196, 55, 27, 0.4);
+    }
+
+    .nav__toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      padding: 8px;
+    }
+
+    .nav__toggle span {
+      width: 24px;
+      height: 2px;
+      background: var(--clr-cream);
+      transition: all 0.3s ease;
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: var(--clr-crust);
+      overflow: hidden;
+    }
+
+    .hero__bg {
+      position: absolute;
+      inset: 0;
+    }
+
+    .hero__bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero__bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(26, 16, 8, 0.85) 0%, rgba(26, 16, 8, 0.4) 50%, rgba(26, 16, 8, 0.7) 100%);
+    }
+
+    .hero__grain {
+      position: absolute;
+      inset: 0;
+      opacity: 0.04;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    }
+
+    .hero__content {
+      position: relative;
+      z-index: 2;
+      padding: 120px 0 80px;
+    }
+
+    .hero__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(245, 200, 66, 0.12);
+      border: 1px solid rgba(245, 200, 66, 0.25);
+      padding: 8px 20px;
+      border-radius: 100px;
+      margin-bottom: 32px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--clr-cheese);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      animation: fadeInUp 0.8s ease both;
+    }
+
+    .hero__badge::before {
+      content: '★';
+      font-size: 14px;
+    }
+
+    .hero__title {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: clamp(3rem, 8vw, 6.5rem);
+      line-height: 0.95;
+      color: var(--clr-cream);
+      max-width: 800px;
+      letter-spacing: -0.03em;
+      margin-bottom: 24px;
+      animation: fadeInUp 0.8s ease 0.1s both;
+    }
+
+    .hero__title em {
+      font-style: italic;
+      color: var(--clr-cheese);
+      display: inline-block;
+    }
+
+    .hero__subtitle {
+      font-size: clamp(1.1rem, 2vw, 1.35rem);
+      color: rgba(250, 245, 235, 0.88);
+      max-width: 560px;
+      line-height: 1.6;
+      margin-bottom: 40px;
+      animation: fadeInUp 0.8s ease 0.2s both;
+    }
+
+    .hero__actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      animation: fadeInUp 0.8s ease 0.3s both;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 36px;
+      border-radius: 100px;
+      font-weight: 700;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .btn--primary {
+      background: var(--clr-sauce);
+      color: var(--clr-cream);
+      box-shadow: 0 8px 32px rgba(196, 55, 27, 0.35);
+    }
+
+    .btn--primary:hover {
+      background: var(--clr-sauce-light);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(196, 55, 27, 0.45);
+    }
+
+    .btn--outline {
+      border: 2px solid rgba(250, 245, 235, 0.3);
+      color: var(--clr-cream);
+      background: rgba(250, 245, 235, 0.05);
+    }
+
+    .btn--outline:hover {
+      border-color: var(--clr-cheese);
+      color: var(--clr-cheese);
+      background: rgba(245, 200, 66, 0.08);
+    }
+
+    .btn__arrow {
+      font-size: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .btn:hover .btn__arrow {
+      transform: translateX(4px);
+    }
+
+    .hero__stats {
+      display: flex;
+      gap: 48px;
+      margin-top: 64px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(250, 245, 235, 0.1);
+      animation: fadeInUp 0.8s ease 0.5s both;
+    }
+
+    .hero__stat-number {
+      font-family: var(--font-accent);
+      font-weight: 900;
+      font-size: 2.5rem;
+      color: var(--clr-cheese);
+      line-height: 1;
+    }
+
+    .hero__stat-label {
+      font-size: 13px;
+      color: rgba(250, 245, 235, 0.78);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-top: 4px;
+    }
+
+    .hero__decor {
+      position: absolute;
+      right: -5%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(196, 55, 27, 0.15) 0%, transparent 70%);
+      z-index: 1;
+      animation: pulse 6s ease-in-out infinite;
+    }
+
+    /* TRUST BAR */
+    .trust-bar {
+      background: var(--clr-crust);
+      padding: 20px 0;
+      border-top: 1px solid rgba(245, 200, 66, 0.08);
+    }
+
+    .trust-bar__inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+
+    .trust-bar__item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      color: rgba(250, 245, 235, 0.82);
+    }
+
+    .trust-bar__icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(245, 200, 66, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+    }
+
+    .trust-bar__highlight {
+      color: var(--clr-cream);
+      font-weight: 700;
+    }
+
+    /* SECTIONS */
+    .section {
+      padding: 100px 0;
+    }
+
+    .section--cream {
+      background: var(--clr-cream);
+    }
+
+    .section--warm {
+      background: var(--clr-warm-white);
+    }
+
+    .section--dark {
+      background: var(--clr-crust);
+      color: var(--clr-cream);
+    }
+
+    .section__header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .section__eyebrow {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--clr-sauce);
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .section--dark .section__eyebrow {
+      color: var(--clr-cheese);
+    }
+
+    .section__title {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+    }
+
+    .section__subtitle {
+      font-size: 1.1rem;
+      color: var(--clr-text-light);
+      max-width: 600px;
+      margin: 16px auto 0;
+      line-height: 1.6;
+    }
+
+    .section--dark .section__subtitle {
+      color: rgba(250, 245, 235, 0.82);
+    }
+
+    /* FEATURED */
+    .featured {
+      padding: 120px 0;
+      background: linear-gradient(180deg, var(--clr-warm-white) 0%, var(--clr-cream) 100%);
+    }
+
+    .featured__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .featured__image-wrap {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      box-shadow: var(--shadow-heavy);
+    }
+
+    .featured__image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 8s ease;
+    }
+
+    .featured__image-wrap:hover img {
+      transform: scale(1.05);
+    }
+
+    .featured__badge-float {
+      position: absolute;
+      top: 24px;
+      left: 24px;
+      background: var(--clr-sauce);
+      color: var(--clr-cream);
+      padding: 10px 20px;
+      border-radius: 100px;
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      box-shadow: 0 4px 20px rgba(196, 55, 27, 0.3);
+    }
+
+    .featured__content .section__eyebrow {
+      text-align: left;
+    }
+
+    .featured__content .section__title {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .featured__desc {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: var(--clr-text-light);
+      margin-bottom: 32px;
+    }
+
+    .featured__note {
+      font-size: 0.9rem;
+      color: var(--clr-basil);
+      font-weight: 500;
+      background: rgba(61, 122, 62, 0.08);
+      padding: 12px 16px;
+      border-radius: var(--radius-sm);
+      margin-bottom: 24px;
+      border-left: 3px solid var(--clr-basil);
+    }
+
+    .featured__list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+
+    .featured__list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .featured__list li::before {
+      content: '🌶️';
+      font-size: 18px;
+    }
+
+    .featured__list li:nth-child(2)::before {
+      content: '🧀';
+    }
+
+    .featured__list li:nth-child(3)::before {
+      content: '🔥';
+    }
+
+    /* MENU */
+    .menu-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 48px;
+      flex-wrap: wrap;
+    }
+
+    .menu-tab {
+      padding: 10px 28px;
+      border-radius: 100px;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      border: 2px solid transparent;
+      color: var(--clr-text);
+      background: transparent;
+      transition: all 0.3s ease;
+    }
+
+    .menu-tab:hover {
+      border-color: var(--clr-sauce);
+      color: var(--clr-sauce);
+    }
+
+    .menu-tab.active {
+      background: var(--clr-sauce);
+      color: var(--clr-cream);
+      border-color: var(--clr-sauce);
+    }
+
+    .menu-tab-content {
+      display: none;
+    }
+
+    .menu-tab-content.active {
+      display: block;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 28px;
+    }
+
+    .menu-card {
+      background: white;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: var(--shadow-soft);
+      position: relative;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-heavy);
+    }
+
+    .menu-card__img {
+      aspect-ratio: 16/10;
+      overflow: hidden;
+    }
+
+    .menu-card__img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .menu-card:hover .menu-card__img img {
+      transform: scale(1.08);
+    }
+
+    .menu-card__body {
+      padding: 20px 24px 24px;
+    }
+
+    .menu-card__name {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-bottom: 6px;
+    }
+
+    .menu-card__desc {
+      font-size: 14px;
+      color: var(--clr-text-light);
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .menu-card__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu-card__price {
+      font-family: var(--font-accent);
+      font-weight: 800;
+      font-size: 1.3rem;
+      color: var(--clr-sauce);
+    }
+
+    .menu-card__price-note {
+      font-size: 11px;
+      color: var(--clr-text-light);
+      font-weight: 400;
+      display: block;
+    }
+
+    .menu-card__add {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--clr-sauce);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      line-height: 1;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(196, 55, 27, 0.25);
+    }
+
+    .menu-card__add:hover {
+      background: var(--clr-sauce-light);
+      transform: scale(1.1);
+    }
+
+    .menu-card__tag {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: var(--clr-cheese);
+      color: var(--clr-crust);
+      padding: 4px 12px;
+      border-radius: 100px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .menu-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .menu-list-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(45, 36, 24, 0.08);
+      transition: background 0.2s ease;
+    }
+
+    .menu-list-item:last-child {
+      border-bottom: none;
+    }
+
+    .menu-list-item:hover {
+      background: rgba(196, 55, 27, 0.02);
+      padding-left: 8px;
+      padding-right: 8px;
+      border-radius: var(--radius-sm);
+    }
+
+    .menu-list-item__info {
+      flex: 1;
+      padding-right: 20px;
+    }
+
+    .menu-list-item__name {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.05rem;
+      margin-bottom: 4px;
+    }
+
+    .menu-list-item__desc {
+      font-size: 13px;
+      color: var(--clr-text-light);
+      line-height: 1.4;
+    }
+
+    .menu-list-item__price {
+      font-family: var(--font-accent);
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: var(--clr-sauce);
+      white-space: nowrap;
+    }
+
+    /* REVIEWS */
+    .reviews__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .review-card {
+      background: rgba(250, 245, 235, 0.06);
+      border: 1px solid rgba(250, 245, 235, 0.08);
+      border-radius: var(--radius-md);
+      padding: 32px;
+      transition: all 0.3s ease;
+    }
+
+    .review-card:hover {
+      background: rgba(250, 245, 235, 0.1);
+      border-color: rgba(245, 200, 66, 0.2);
+      transform: translateY(-4px);
+    }
+
+    .review-card__stars {
+      color: var(--clr-cheese);
+      font-size: 18px;
+      letter-spacing: 4px;
+      margin-bottom: 16px;
+    }
+
+    .review-card__text {
+      font-size: 15px;
+      line-height: 1.65;
+      color: rgba(250, 245, 235, 0.9);
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    .review-card__author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .review-card__avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--clr-sauce);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--clr-cream);
+    }
+
+    .review-card__name {
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--clr-cream);
+    }
+
+    .review-card__source {
+      font-size: 12px;
+      color: rgba(250, 245, 235, 0.78);
+    }
+
+    /* STORY */
+    .story__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .story__images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .story__img {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-medium);
+    }
+
+    .story__img:first-child {
+      grid-row: span 2;
+    }
+
+    .story__img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .story__content .section__eyebrow {
+      text-align: left;
+    }
+
+    .story__content .section__title {
+      text-align: left;
+      margin-bottom: 24px;
+    }
+
+    .story__text {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--clr-text-light);
+      margin-bottom: 20px;
+    }
+
+    .story__highlight {
+      background: linear-gradient(135deg, var(--clr-sauce), var(--clr-sauce-deep));
+      color: var(--clr-cream);
+      padding: 28px 32px;
+      border-radius: var(--radius-md);
+      margin-top: 32px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .story__highlight-icon {
+      font-size: 40px;
+      flex-shrink: 0;
+    }
+
+    .story__highlight-text {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .story__highlight-text strong {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    /* DEALS */
+    .deals__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .deal-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-medium);
+      transition: all 0.4s ease;
+      position: relative;
+    }
+
+    .deal-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-heavy);
+    }
+
+    .deal-card__ribbon {
+      position: absolute;
+      top: 20px;
+      left: -8px;
+      background: var(--clr-sauce);
+      color: white;
+      padding: 6px 20px 6px 16px;
+      font-weight: 700;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      z-index: 2;
+      clip-path: polygon(0 0, 100% 0, 92% 100%, 0 100%);
+    }
+
+    .deal-card__img {
+      aspect-ratio: 16/9;
+      overflow: hidden;
+    }
+
+    .deal-card__img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .deal-card__body {
+      padding: 24px;
+    }
+
+    .deal-card__title {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+
+    .deal-card__desc {
+      font-size: 14px;
+      color: var(--clr-text-light);
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    .deal-card__fine {
+      font-size: 12px;
+      color: var(--clr-text-light);
+      margin-bottom: 16px;
+      font-style: italic;
+    }
+
+    .deal-card__price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .deal-card__price {
+      font-family: var(--font-accent);
+      font-weight: 900;
+      font-size: 2rem;
+      color: var(--clr-sauce);
+    }
+
+    .deal-card__price-note {
+      font-size: 13px;
+      color: var(--clr-text-light);
+    }
+
+    .deal-card__cta {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      background: var(--clr-crust);
+      color: var(--clr-cream);
+      text-align: center;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      transition: all 0.3s ease;
+    }
+
+    .deal-card__cta:hover {
+      background: var(--clr-sauce);
+    }
+
+    /* CATERING */
+    .catering {
+      padding: 100px 0;
+      background: linear-gradient(135deg, rgba(26, 16, 8, 0.9) 0%, rgba(45, 30, 15, 0.88) 100%), url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=40') center/cover no-repeat;
+    }
+
+    .catering__inner {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .catering__title {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      color: var(--clr-cream);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .catering__desc {
+      font-size: 1.1rem;
+      color: rgba(250, 245, 235, 0.88);
+      line-height: 1.6;
+      margin-bottom: 36px;
+    }
+
+    .catering__features {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .catering__feature {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 15px;
+      color: var(--clr-cheese);
+      font-weight: 500;
+    }
+
+    .catering__feature::before {
+      content: '✓';
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    /* LOCATION */
+    .location__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .location__map {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-heavy);
+      aspect-ratio: 4/3;
+      background: #e8e0d4;
+    }
+
+    .location__map iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .location__info {
+      padding: 20px 0;
+    }
+
+    .location__detail {
+      display: flex;
+      gap: 16px;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(45, 36, 24, 0.08);
+    }
+
+    .location__detail:last-child {
+      border-bottom: none;
+    }
+
+    .location__detail-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(196, 55, 27, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+
+    .location__detail-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--clr-text-light);
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+
+    .location__detail-value {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .location__hours-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .location__hours-list li {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: var(--clr-text);
+    }
+
+    .location__hours-list li span:first-child {
+      font-weight: 600;
+      color: var(--clr-text);
+    }
+
+    .location__delivery-note {
+      margin-top: 16px;
+      padding: 12px 16px;
+      background: rgba(196, 55, 27, 0.06);
+      border-radius: var(--radius-sm);
+      font-size: 13px;
+      color: var(--clr-text);
+      line-height: 1.5;
+    }
+
+    .location__delivery-note strong {
+      color: var(--clr-sauce);
+    }
+
+    /* EMAIL */
+    .email-capture {
+      background: var(--clr-cheese);
+      padding: 60px 0;
+    }
+
+    .email-capture__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .email-capture__text h3 {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 1.8rem;
+      color: var(--clr-crust);
+      margin-bottom: 4px;
+    }
+
+    .email-capture__text p {
+      font-size: 15px;
+      color: var(--clr-char);
+    }
+
+    .email-capture__form {
+      display: flex;
+      gap: 12px;
+      flex: 1;
+      max-width: 480px;
+    }
+
+    .email-capture__input {
+      flex: 1;
+      padding: 14px 20px;
+      border: 2px solid rgba(26, 16, 8, 0.15);
+      border-radius: 100px;
+      font-family: var(--font-body);
+      font-size: 15px;
+      background: white;
+      transition: border-color 0.3s ease;
+    }
+
+    .email-capture__input:focus {
+      outline: 2px solid var(--clr-sauce);
+      outline-offset: 2px;
+      border-color: var(--clr-sauce);
+    }
+
+    .email-capture__input::placeholder {
+      color: var(--clr-warm-gray);
+    }
+
+    .email-capture__submit {
+      padding: 14px 32px;
+      background: var(--clr-crust);
+      color: var(--clr-cream);
+      border-radius: 100px;
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      white-space: nowrap;
+      transition: all 0.3s ease;
+    }
+
+    .email-capture__submit:hover {
+      background: var(--clr-sauce);
+    }
+
+    /* FOOTER */
+    .footer {
+      background: var(--clr-crust);
+      padding: 64px 0 32px;
+      color: rgba(250, 245, 235, 0.82);
+    }
+
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+
+    .footer__brand-desc {
+      font-size: 14px;
+      line-height: 1.7;
+      margin-top: 16px;
+      max-width: 320px;
+    }
+
+    .footer__heading {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--clr-cream);
+      margin-bottom: 20px;
+    }
+
+    .footer__links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer__links a {
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+
+    .footer__links a:hover {
+      color: var(--clr-cheese);
+    }
+
+    .footer__social {
+      display: flex;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .footer__social a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(250, 245, 235, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .footer__social a:hover {
+      background: var(--clr-sauce);
+      color: var(--clr-cream);
+    }
+
+    .footer__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 32px;
+      border-top: 1px solid rgba(250, 245, 235, 0.08);
+      font-size: 13px;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer__badges {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .footer__badge {
+      padding: 4px 12px;
+      border-radius: 4px;
+      background: rgba(61, 122, 62, 0.15);
+      color: var(--clr-basil-light);
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* FLOAT */
+    .float-order {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 999;
+      background: var(--clr-sauce);
+      color: white;
+      padding: 16px 32px;
+      border-radius: 100px;
+      font-weight: 700;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      box-shadow: 0 8px 32px rgba(196, 55, 27, 0.4);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      animation: bounceIn 0.6s ease 1s both;
+    }
+
+    .float-order:hover {
+      background: var(--clr-sauce-light);
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 12px 40px rgba(196, 55, 27, 0.5);
+    }
+
+    .float-order__icon {
+      font-size: 20px;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(28px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes bounceIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.5) translateY(20px);
+      }
+
+      60% {
+        opacity: 1;
+        transform: scale(1.05) translateY(-4px);
+      }
+
+      100% {
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        transform: translateY(-50%) scale(1);
+        opacity: 0.3;
+      }
+
+      50% {
+        transform: translateY(-50%) scale(1.1);
+        opacity: 0.5;
+      }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* CONTENT VISIBILITY for off-screen sections */
+    .section,
+    .catering {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 600px;
+    }
+
+    /* MOBILE NAV (CSS-based) */
+    @media (max-width: 768px) {
+      .nav__links {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: rgba(26, 16, 8, 0.98);
+        padding: 24px;
+        gap: 20px;
+        z-index: 1000;
+      }
+
+      .nav__links.open {
+        display: flex;
+      }
+
+      .nav__toggle {
+        display: flex;
+      }
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+
+      .featured__grid,
+      .story__grid,
+      .location__grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .reviews__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero__stats {
+        gap: 24px;
+        flex-wrap: wrap;
+      }
+
+      .hero__stat-number {
+        font-size: 2rem;
+      }
+
+      .reviews__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .menu-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .trust-bar__inner {
+        gap: 24px;
+      }
+
+      .email-capture__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .email-capture__form {
+        max-width: 100%;
+      }
+
+      .footer__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero__decor {
+        display: none;
+      }
+
+      .float-order {
+        bottom: 16px;
+        right: 16px;
+        padding: 14px 24px;
+        font-size: 14px;
+      }
+
+      .section {
+        padding: 64px 0;
+      }
+
+      .featured {
+        padding: 80px 0;
+      }
+
+      .section__title {
+        font-size: clamp(1.8rem, 5vw, 2.5rem);
+      }
+
+      .hero__title {
+        font-size: clamp(2.4rem, 7vw, 4rem);
+      }
+
+      .deals__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .story__images {
+        gap: 8px;
+      }
+
+      .location__map {
+        aspect-ratio: 16/9;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .menu-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero__actions {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .catering__features {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .deals__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .trust-bar__inner {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+      }
+
+      .trust-bar__item {
+        justify-content: center;
+      }
+
+      .hero__stats {
+        gap: 16px;
+      }
+
+      .hero__stats>div {
+        flex: 1 1 40%;
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<a href="#main-content" class="skip-link">Skip to main content</a>
-<script type="application/ld+json">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Restaurant","name":"LaVentina's Pizza","image":"https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1200&q=80","url":"https://la-ventinas-pizza.vercel.app/","telephone":"+15628046490","address":{"@type":"PostalAddress","streetAddress":"5806 Bellflower Blvd","addressLocality":"Lakewood","addressRegion":"CA","postalCode":"90713","addressCountry":"US"},"servesCuisine":["Pizza","Indian Fusion"],"priceRange":"$$","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday","Monday","Tuesday","Wednesday","Thursday"],"opens":"11:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"11:00","closes":"21:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"576","bestRating":"5"}}
 </script>
 
-<!-- NAV -->
-<nav class="nav" id="nav"><div class="nav__inner">
-  <a href="#home" class="nav__logo" aria-label="LaVentina's Pizza - Home"><div class="nav__logo-icon" aria-hidden="true">LV</div><div class="nav__logo-text">LaVentina's <span>Pizza</span></div></a>
-  <ul class="nav__links" id="nav-links"><li><a href="#menu">Menu</a></li><li><a href="#specials">Specials</a></li><li><a href="#story">Our Story</a></li><li><a href="#catering">Catering</a></li><li><a href="#location">Location</a></li></ul>
-  <a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener" class="nav__order-btn">Order Now</a>
-  <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
-</div></nav>
-
-<!-- HERO -->
-<main id="main-content">
-<section class="hero" id="home">
-  <div class="hero__bg"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=40" alt="" width="600" height="400" fetchpriority="high" decoding="sync"></div><div class="hero__grain"></div><div class="hero__decor"></div>
-  <div class="container hero__content">
-    <div class="hero__badge">Serving Lakewood Since 2004</div>
-    <h1 class="hero__title">Pizza with a<br><em>Desi twist.</em></h1>
-    <p class="hero__subtitle">Hand-tossed, made-to-order pizza with our one-of-a-kind homemade sauce. Classic pies and bold Desi fusion flavors — only at LaVentina's on Bellflower Blvd.</p>
-    <div class="hero__actions">
-      <a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener" class="btn btn--primary">Order Online <span class="btn__arrow" aria-hidden="true">→</span></a>
-      <a href="#menu" class="btn btn--outline">View Menu <span class="btn__arrow" aria-hidden="true">→</span></a>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo" aria-label="LaVentina's Pizza - Home">
+        <div class="nav__logo-icon" aria-hidden="true">LV</div>
+        <div class="nav__logo-text">LaVentina's <span>Pizza</span></div>
+      </a>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#specials">Specials</a></li>
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#catering">Catering</a></li>
+        <li><a href="#location">Location</a></li>
+      </ul>
+      <a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank"
+        rel="noopener" class="nav__order-btn">Order Now</a>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false"
+        aria-controls="nav-links"><span></span><span></span><span></span></button>
     </div>
-    <div class="hero__stats">
-      <div><div class="hero__stat-number">20+</div><div class="hero__stat-label">Years in Lakewood</div></div>
-      <div><div class="hero__stat-number">576</div><div class="hero__stat-label">5-Star Ratings</div></div>
-      <div><div class="hero__stat-number">A</div><div class="hero__stat-label">Health Score</div></div>
-      <div><div class="hero__stat-number">307</div><div class="hero__stat-label">Yelp Reviews</div></div>
+  </nav>
+
+  <!-- HERO -->
+  <main id="main-content">
+    <section class="hero" id="home">
+      <div class="hero__bg"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=40" alt=""
+          width="600" height="400" fetchpriority="high" decoding="sync"></div>
+      <div class="hero__grain"></div>
+      <div class="hero__decor"></div>
+      <div class="container hero__content">
+        <div class="hero__badge">Serving Lakewood Since 2004</div>
+        <h1 class="hero__title">Pizza with a<br><em>Desi twist.</em></h1>
+        <p class="hero__subtitle">Hand-tossed, made-to-order pizza with our one-of-a-kind homemade sauce. Classic pies
+          and bold Desi fusion flavors — only at LaVentina's on Bellflower Blvd.</p>
+        <div class="hero__actions">
+          <a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank"
+            rel="noopener" class="btn btn--primary">Order Online <span class="btn__arrow"
+              aria-hidden="true">→</span></a>
+          <a href="#menu" class="btn btn--outline">View Menu <span class="btn__arrow" aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero__stats">
+          <div>
+            <div class="hero__stat-number">20+</div>
+            <div class="hero__stat-label">Years in Lakewood</div>
+          </div>
+          <div>
+            <div class="hero__stat-number">576</div>
+            <div class="hero__stat-label">5-Star Ratings</div>
+          </div>
+          <div>
+            <div class="hero__stat-number">A</div>
+            <div class="hero__stat-label">Health Score</div>
+          </div>
+          <div>
+            <div class="hero__stat-number">307</div>
+            <div class="hero__stat-label">Yelp Reviews</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <div class="trust-bar">
+      <div class="trust-bar__inner">
+        <div class="trust-bar__item">
+          <div class="trust-bar__icon" aria-hidden="true">⭐</div>
+          <div><span class="trust-bar__highlight">576 Ratings</span> on Slice</div>
+        </div>
+        <div class="trust-bar__item">
+          <div class="trust-bar__icon" aria-hidden="true">🛡️</div>
+          <div>Health Score: <span class="trust-bar__highlight">A</span></div>
+        </div>
+        <div class="trust-bar__item">
+          <div class="trust-bar__icon" aria-hidden="true">🎉</div>
+          <div><span class="trust-bar__highlight">5% Off</span> Online Orders</div>
+        </div>
+        <div class="trust-bar__item">
+          <div class="trust-bar__icon" aria-hidden="true">🚗</div>
+          <div>Delivery from <span class="trust-bar__highlight">$3.25</span></div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
 
-<!-- TRUST BAR -->
-<div class="trust-bar"><div class="trust-bar__inner">
-  <div class="trust-bar__item"><div class="trust-bar__icon" aria-hidden="true">⭐</div><div><span class="trust-bar__highlight">576 Ratings</span> on Slice</div></div>
-  <div class="trust-bar__item"><div class="trust-bar__icon" aria-hidden="true">🛡️</div><div>Health Score: <span class="trust-bar__highlight">A</span></div></div>
-  <div class="trust-bar__item"><div class="trust-bar__icon" aria-hidden="true">🎉</div><div><span class="trust-bar__highlight">5% Off</span> Online Orders</div></div>
-  <div class="trust-bar__item"><div class="trust-bar__icon" aria-hidden="true">🚗</div><div>Delivery from <span class="trust-bar__highlight">$3.25</span></div></div>
-</div></div>
+    <!-- FEATURED DESI -->
+    <section class="featured reveal" id="desi">
+      <div class="container">
+        <div class="featured__grid">
+          <div class="featured__image-wrap">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=640&q=50"
+              alt="LaVentina's Desi fusion pizza with fresh cilantro" width="640" height="480" loading="lazy"
+              decoding="async">
+            <div class="featured__badge-float"><span aria-hidden="true">🌶️</span> Only at LaVentina's</div>
+          </div>
+          <div class="featured__content">
+            <span class="section__eyebrow">Our Signature Line</span>
+            <h2 class="section__title">Desi Fusion Pizzas</h2>
+            <p class="featured__desc">A spicy &amp; zesty homemade sauce with an Asian-Indian twist, over our seasoned
+              crust and garnished with fresh cilantro. Nothing like it anywhere else in Lakewood.</p>
+            <div class="featured__note"><span aria-hidden="true">ℹ️</span> Our Desi sauce does not contain garlic or
+              onions.</div>
+            <ul class="featured__list">
+              <li>Veggie Desi — mushrooms, bell peppers, onions, tomatoes, olives, jalapeños</li>
+              <li>Chutney Pizza — Desi sauce topped with chutney and cheese</li>
+              <li>Desi Thai Chili — chili, tomatoes, onions, fresh cilantro</li>
+            </ul>
+            <a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank"
+              rel="noopener" class="btn btn--primary">Order Desi Pizza <span class="btn__arrow"
+                aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- FEATURED DESI -->
-<section class="featured reveal" id="desi"><div class="container"><div class="featured__grid">
-  <div class="featured__image-wrap">
-    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=640&q=50" alt="LaVentina's Desi fusion pizza with fresh cilantro" width="640" height="480" loading="lazy" decoding="async">
-    <div class="featured__badge-float"><span aria-hidden="true">🌶️</span> Only at LaVentina's</div>
-  </div>
-  <div class="featured__content">
-    <span class="section__eyebrow">Our Signature Line</span>
-    <h2 class="section__title">Desi Fusion Pizzas</h2>
-    <p class="featured__desc">A spicy &amp; zesty homemade sauce with an Asian-Indian twist, over our seasoned crust and garnished with fresh cilantro. Nothing like it anywhere else in Lakewood.</p>
-    <div class="featured__note"><span aria-hidden="true">ℹ️</span> Our Desi sauce does not contain garlic or onions.</div>
-    <ul class="featured__list">
-      <li>Veggie Desi — mushrooms, bell peppers, onions, tomatoes, olives, jalapeños</li>
-      <li>Chutney Pizza — Desi sauce topped with chutney and cheese</li>
-      <li>Desi Thai Chili — chili, tomatoes, onions, fresh cilantro</li>
-    </ul>
-    <a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener" class="btn btn--primary">Order Desi Pizza <span class="btn__arrow" aria-hidden="true">→</span></a>
-  </div>
-</div></div></section>
+    <!-- MENU -->
+    <section class="section section--cream reveal" id="menu">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Our Menu</span>
+          <h2 class="section__title">Handcrafted &amp; Made to Order</h2>
+          <p class="section__subtitle">Fresh dough daily, hand-tossed every time, and our signature homemade sauce.</p>
+        </div>
 
-<!-- MENU -->
-<section class="section section--cream reveal" id="menu"><div class="container">
-  <div class="section__header">
-    <span class="section__eyebrow">Our Menu</span>
-    <h2 class="section__title">Handcrafted &amp; Made to Order</h2>
-    <p class="section__subtitle">Fresh dough daily, hand-tossed every time, and our signature homemade sauce.</p>
-  </div>
+        <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+          <button class="menu-tab active" data-tab="pizza" role="tab" aria-selected="true" aria-controls="tab-pizza"
+            id="menutab-pizza">Pizza</button>
+          <button class="menu-tab" data-tab="gourmet" role="tab" aria-selected="false" aria-controls="tab-gourmet"
+            id="menutab-gourmet">Gourmet</button>
+          <button class="menu-tab" data-tab="desi" role="tab" aria-selected="false" aria-controls="tab-desi"
+            id="menutab-desi">Desi</button>
+          <button class="menu-tab" data-tab="appetizers" role="tab" aria-selected="false" aria-controls="tab-appetizers"
+            id="menutab-appetizers">Appetizers</button>
+          <button class="menu-tab" data-tab="subs" role="tab" aria-selected="false" aria-controls="tab-subs"
+            id="menutab-subs">Subs</button>
+          <button class="menu-tab" data-tab="salads" role="tab" aria-selected="false" aria-controls="tab-salads"
+            id="menutab-salads">Salads</button>
+        </div>
 
-  <div class="menu-tabs" role="tablist" aria-label="Menu categories">
-    <button class="menu-tab active" data-tab="pizza" role="tab" aria-selected="true" aria-controls="tab-pizza" id="menutab-pizza">Pizza</button>
-    <button class="menu-tab" data-tab="gourmet" role="tab" aria-selected="false" aria-controls="tab-gourmet" id="menutab-gourmet">Gourmet</button>
-    <button class="menu-tab" data-tab="desi" role="tab" aria-selected="false" aria-controls="tab-desi" id="menutab-desi">Desi</button>
-    <button class="menu-tab" data-tab="appetizers" role="tab" aria-selected="false" aria-controls="tab-appetizers" id="menutab-appetizers">Appetizers</button>
-    <button class="menu-tab" data-tab="subs" role="tab" aria-selected="false" aria-controls="tab-subs" id="menutab-subs">Subs</button>
-    <button class="menu-tab" data-tab="salads" role="tab" aria-selected="false" aria-controls="tab-salads" id="menutab-salads">Salads</button>
-  </div>
+        <!-- PIZZA -->
+        <div class="menu-tab-content active" data-content="pizza" role="tabpanel" id="tab-pizza"
+          aria-labelledby="menutab-pizza">
+          <div class="menu-grid">
+            <div class="menu-card">
+              <div class="menu-card__tag">Best Seller</div>
+              <div class="menu-card__img"><img src="cheese_pizza_2.png" alt="Cheese Pizza" width="400" height="250"
+                  loading="lazy" decoding="async"></div>
+              <div class="menu-card__body">
+                <h3 class="menu-card__name">Cheese Pizza</h3>
+                <p class="menu-card__desc">Classic cheese or create your own pizza with your choice of toppings.</p>
+                <div class="menu-card__footer"><span class="menu-card__price">$10.69<span
+                      class="menu-card__price-note">medium</span></span><button class="menu-card__add"
+                    aria-label="Order">+</button></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__tag">Best Seller</div>
+              <div class="menu-card__img"><img src="veggie_pizza.png" alt="Veggie Pizza" width="400" height="250"
+                  loading="lazy" decoding="async"></div>
+              <div class="menu-card__body">
+                <h3 class="menu-card__name">Veggie Pizza</h3>
+                <p class="menu-card__desc">Mushrooms, bell peppers, onions, tomatoes, and olives.</p>
+                <div class="menu-card__footer"><span class="menu-card__price">$15.99<span
+                      class="menu-card__price-note">medium</span></span><button class="menu-card__add"
+                    aria-label="Order">+</button></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__img"><img
+                  src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&q=50" alt="Pan Pizza"
+                  width="400" height="250" loading="lazy" decoding="async"></div>
+              <div class="menu-card__body">
+                <h3 class="menu-card__name">Pan Pizza</h3>
+                <p class="menu-card__desc">Thick, golden-crusted pan pizza baked to perfection.</p>
+                <div class="menu-card__footer"><span class="menu-card__price">$15.29<span
+                      class="menu-card__price-note">medium</span></span><button class="menu-card__add"
+                    aria-label="Order">+</button></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__img"><img
+                  src="https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?w=400&q=50"
+                  alt="Personal Veggie Pizza" width="400" height="250" loading="lazy" decoding="async"></div>
+              <div class="menu-card__body">
+                <h3 class="menu-card__name">Personal Veggie Pizza</h3>
+                <p class="menu-card__desc">The perfect single-serving size of our classic veggie pie.</p>
+                <div class="menu-card__footer"><span class="menu-card__price">$7.69<span
+                      class="menu-card__price-note">personal</span></span><button class="menu-card__add"
+                    aria-label="Order">+</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <!-- PIZZA -->
-  <div class="menu-tab-content active" data-content="pizza" role="tabpanel" id="tab-pizza" aria-labelledby="menutab-pizza">
-    <div class="menu-grid">
-      <div class="menu-card"><div class="menu-card__tag">Best Seller</div><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=50" alt="Cheese Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Cheese Pizza</h3><p class="menu-card__desc">Classic cheese or create your own pizza with your choice of toppings.</p><div class="menu-card__footer"><span class="menu-card__price">$10.69<span class="menu-card__price-note">medium</span></span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__tag">Best Seller</div><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400&q=50" alt="Veggie Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Veggie Pizza</h3><p class="menu-card__desc">Mushrooms, bell peppers, onions, tomatoes, and olives.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99<span class="menu-card__price-note">medium</span></span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&q=50" alt="Pan Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Pan Pizza</h3><p class="menu-card__desc">Thick, golden-crusted pan pizza baked to perfection.</p><div class="menu-card__footer"><span class="menu-card__price">$15.29<span class="menu-card__price-note">medium</span></span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?w=400&q=50" alt="Personal Veggie Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Personal Veggie Pizza</h3><p class="menu-card__desc">The perfect single-serving size of our classic veggie pie.</p><div class="menu-card__footer"><span class="menu-card__price">$7.69<span class="menu-card__price-note">personal</span></span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
+        <!-- GOURMET -->
+        <div class="menu-tab-content" data-content="gourmet" role="tabpanel" id="tab-gourmet"
+          aria-labelledby="menutab-gourmet">
+          <div class="menu-grid">
+            <div class="menu-card">
+              <div class="menu-card__tag">Best Seller</div>
+              <div class="menu-card__img"><img
+                  src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=400&q=50" alt="Deluxe Pizza"
+                  width="400" height="250" loading="lazy" decoding="async"></div>
+              <div class="menu-card__body">
+                <h3 class="menu-card__name">Deluxe Pizza</h3>
+                <p class="menu-card__desc">Pepperoni, sausage, Canadian bacon, mushrooms, bell peppers, onions, and
+                  olives.</p>
+                <div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button
+                    class="menu-card__add" aria-label="Order">+</button></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__tag">Best Seller</div>
+              <div class="menu-card__img"><img
+                  src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=50" alt="BBQ Chicken Pizza"
+                  width="400" height="250" loading="lazy" decoding="async"></div>
+              <div class="menu-card__body">
+                <h3 class="menu-card__name">BBQ Chicken Pizza</h3>
+                <p class="menu-card__desc">BBQ sauce, chicken, red onions, topped with mozzarella and garnished with
+                  fresh cilantro.</p>
+                <div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button
+                    class="menu-card__add" aria-label="Order">+</button></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__img"><img
+                  src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&q=50"
+                  alt="Tandoori Chicken Pizza" width="400" height="250" loading="lazy" decoding="async"></div>
+              <div class="menu-card__body">
+                <h3 class="menu-card__name">Tandoori Chicken Pizza</h3>
+                <p class="menu-card__desc">Tandoori chicken, Thai chili, garlic, onions, tomatoes, with fresh cilantro
+                  and tandoori sauce.</p>
+                <div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button
+                    class="menu-card__add" aria-label="Order">+</button></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__tag">Best Seller</div>
+              <div class="menu-card__img"><img
+                  src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=400&q=50" alt="Meat Lover's Pizza"
+                  width="400" height="250" loading="lazy" decoding="async"></div>
+              <div class="menu-card__body">
+                <h3 class="menu-card__name">Meat Lover's Pizza</h3>
+                <p class="menu-card__desc">Pepperoni, sausage, Canadian bacon, meatballs, and chicken.</p>
+                <div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button
+                    class="menu-card__add" aria-label="Order">+</button></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__img"><img
+                  src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=400&q=50"
+                  alt="Spicy Chicken Pizza" width="400" height="250" loading="lazy" decoding="async"></div>
+              <div class="menu-card__body">
+                <h3 class="menu-card__name">Spicy Chicken Pizza</h3>
+                <p class="menu-card__desc">Chicken, pineapple, almonds, tandoori seasoning, and our Desi pizza sauce.
+                </p>
+                <div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button
+                    class="menu-card__add" aria-label="Order">+</button></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__img"><img
+                  src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=50" alt="Pastrami Pizza"
+                  width="400" height="250" loading="lazy" decoding="async"></div>
+              <div class="menu-card__body">
+                <h3 class="menu-card__name">Pastrami Pizza</h3>
+                <p class="menu-card__desc">Pastrami, pickles, mustard, cheese and sauce.</p>
+                <div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button
+                    class="menu-card__add" aria-label="Order">+</button></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__img"><img
+                  src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&q=50" alt="Neapolitan Pizza"
+                  width="400" height="250" loading="lazy" decoding="async"></div>
+              <div class="menu-card__body">
+                <h3 class="menu-card__name">Neapolitan Pizza</h3>
+                <p class="menu-card__desc">Cheese or pepperoni with oregano, olive oil and Romano cheese.</p>
+                <div class="menu-card__footer"><span class="menu-card__price">$15.39</span><button
+                    class="menu-card__add" aria-label="Order">+</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DESI -->
+        <div class="menu-tab-content" data-content="desi" role="tabpanel" id="tab-desi" aria-labelledby="menutab-desi">
+          <div
+            style="text-align:center;margin-bottom:32px;padding:16px 24px;background:rgba(196,55,27,0.06);border-radius:var(--radius-md);max-width:680px;margin-left:auto;margin-right:auto;">
+            <p style="font-size:15px;color:var(--clr-text-light);line-height:1.6;">Our Desi pizzas have a <strong
+                style="color:var(--clr-sauce);">spicy &amp; zesty homemade sauce</strong> with an Asian-Indian twist
+              over our seasoned crust. Sauce does not contain garlic or onions.</p>
+          </div>
+          <div class="menu-grid">
+            <div class="menu-card">
+              <div class="menu-card__img"><img
+                  src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400&q=50" alt="Veggie Desi Pizza"
+                  width="400" height="250" loading="lazy" decoding="async"></div>
+              <div class="menu-card__body">
+                <h3 class="menu-card__name">Veggie Desi Pizza</h3>
+                <p class="menu-card__desc">Desi sauce, mushrooms, bell peppers, onions, tomatoes, olives, jalapeños.
+                  Garnished with fresh cilantro over seasoned crust.</p>
+                <div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button
+                    class="menu-card__add" aria-label="Order">+</button></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__img"><img
+                  src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=50" alt="Chutney Pizza"
+                  width="400" height="250" loading="lazy" decoding="async"></div>
+              <div class="menu-card__body">
+                <h3 class="menu-card__name">Chutney Pizza</h3>
+                <p class="menu-card__desc">Desi pizza sauce, topped with chutney and cheese over our seasoned crust.</p>
+                <div class="menu-card__footer"><span class="menu-card__price">$11.49</span><button
+                    class="menu-card__add" aria-label="Order">+</button></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__img"><img
+                  src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=400&q=50"
+                  alt="Desi Thai Chili Pizza" width="400" height="250" loading="lazy" decoding="async"></div>
+              <div class="menu-card__body">
+                <h3 class="menu-card__name">Desi Thai Chili Pizza</h3>
+                <p class="menu-card__desc">Desi sauce, chili, tomatoes, and onions. Garnished with fresh cilantro over
+                  seasoned crust.</p>
+                <div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button
+                    class="menu-card__add" aria-label="Order">+</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- APPETIZERS -->
+        <div class="menu-tab-content" data-content="appetizers" role="tabpanel" id="tab-appetizers"
+          aria-labelledby="menutab-appetizers">
+          <div class="menu-grid">
+            <div class="menu-card">
+              <div class="menu-card__tag">House Fav</div>
+              <div class="menu-card__img"><img
+                  src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=400&q=50"
+                  alt="Garlic Cheese Bread" width="400" height="250" loading="lazy" decoding="async"></div>
+              <div class="menu-card__body">
+                <h3 class="menu-card__name">Garlic Cheese Bread</h3>
+                <p class="menu-card__desc">Freshly baked bread loaded with garlic and melted cheese.</p>
+                <div class="menu-card__footer"><span class="menu-card__price">$5.19</span><button class="menu-card__add"
+                    aria-label="Order">+</button></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__tag">House Fav</div>
+              <div class="menu-card__img"><img
+                  src="https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?w=400&q=50" alt="Garlic Dots"
+                  width="400" height="250" loading="lazy" decoding="async"></div>
+              <div class="menu-card__body">
+                <h3 class="menu-card__name">Garlic Dots</h3>
+                <p class="menu-card__desc">Bite-sized dough balls tossed in garlic butter. Addictive.</p>
+                <div class="menu-card__footer"><span class="menu-card__price">$3.99</span><button class="menu-card__add"
+                    aria-label="Order">+</button></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__img"><img
+                  src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=400&q=50" alt="Chicken Wings"
+                  width="400" height="250" loading="lazy" decoding="async"></div>
+              <div class="menu-card__body">
+                <h3 class="menu-card__name">Chicken Wings</h3>
+                <p class="menu-card__desc">Whole chicken wings, oven baked.</p>
+                <div class="menu-card__footer"><span class="menu-card__price">$7.49</span><button class="menu-card__add"
+                    aria-label="Order">+</button></div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card__img"><img
+                  src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&q=50" alt="Pizza Roll"
+                  width="400" height="250" loading="lazy" decoding="async"></div>
+              <div class="menu-card__body">
+                <h3 class="menu-card__name">Pizza Roll</h3>
+                <p class="menu-card__desc">Cheese &amp; your choice of three toppings, rolled and baked golden.</p>
+                <div class="menu-card__footer"><span class="menu-card__price">$7.99</span><button class="menu-card__add"
+                    aria-label="Order">+</button></div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-list" style="max-width:680px;margin:32px auto 0;">
+            <div class="menu-list-item">
+              <div class="menu-list-item__info">
+                <div class="menu-list-item__name">Garlic Bread</div>
+                <div class="menu-list-item__desc">Topped with garlic, herb seasoning, baked to perfection.</div>
+              </div>
+              <div class="menu-list-item__price">$3.19</div>
+            </div>
+            <div class="menu-list-item">
+              <div class="menu-list-item__info">
+                <div class="menu-list-item__name">Plain Boneless Wings</div>
+                <div class="menu-list-item__desc">Crispy boneless wings, ready to dip.</div>
+              </div>
+              <div class="menu-list-item__price">$5.99</div>
+            </div>
+            <div class="menu-list-item">
+              <div class="menu-list-item__info">
+                <div class="menu-list-item__name">Potato Wedges</div>
+                <div class="menu-list-item__desc">Garlic Parmesan or plain.</div>
+              </div>
+              <div class="menu-list-item__price">$3.49</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUBS -->
+        <div class="menu-tab-content" data-content="subs" role="tabpanel" id="tab-subs" aria-labelledby="menutab-subs">
+          <div style="text-align:center;margin-bottom:24px;">
+            <p style="font-size:15px;color:var(--clr-text-light);">All subs topped with mozzarella cheese and
+              oven-baked. <strong style="color:var(--clr-sauce);">$8.49 each.</strong></p>
+          </div>
+          <div class="menu-list" style="max-width:720px;margin:0 auto;">
+            <div class="menu-list-item">
+              <div class="menu-list-item__info">
+                <div class="menu-list-item__name">Chicken Sub</div>
+                <div class="menu-list-item__desc">Pizza sauce, chicken, mushrooms, bell peppers, onions.</div>
+              </div>
+              <div class="menu-list-item__price">$8.49</div>
+            </div>
+            <div class="menu-list-item">
+              <div class="menu-list-item__info">
+                <div class="menu-list-item__name">BBQ Chicken Sub</div>
+                <div class="menu-list-item__desc">BBQ sauce, chicken, mushrooms, bell peppers, onions.</div>
+              </div>
+              <div class="menu-list-item__price">$8.49</div>
+            </div>
+            <div class="menu-list-item">
+              <div class="menu-list-item__info">
+                <div class="menu-list-item__name">Tandoori Chicken Sub</div>
+                <div class="menu-list-item__desc">Tandoori sauce, chilis, garlic, onions, tomatoes, tandoori chicken.
+                  Garnished with fresh cilantro.</div>
+              </div>
+              <div class="menu-list-item__price">$8.49</div>
+            </div>
+            <div class="menu-list-item">
+              <div class="menu-list-item__info">
+                <div class="menu-list-item__name">Deluxe Sub</div>
+                <div class="menu-list-item__desc">Pizza sauce, pepperoni, sausage, Canadian bacon, mushrooms, bell
+                  peppers, onions, olives.</div>
+              </div>
+              <div class="menu-list-item__price">$8.49</div>
+            </div>
+            <div class="menu-list-item">
+              <div class="menu-list-item__info">
+                <div class="menu-list-item__name">Meat Lover Sub</div>
+                <div class="menu-list-item__desc">Pizza sauce, pepperoni, sausage, Canadian bacon, meatball, chicken.
+                </div>
+              </div>
+              <div class="menu-list-item__price">$8.49</div>
+            </div>
+            <div class="menu-list-item">
+              <div class="menu-list-item__info">
+                <div class="menu-list-item__name">Meatball Sub</div>
+                <div class="menu-list-item__desc">Pizza sauce and meatballs.</div>
+              </div>
+              <div class="menu-list-item__price">$8.49</div>
+            </div>
+            <div class="menu-list-item">
+              <div class="menu-list-item__info">
+                <div class="menu-list-item__name">Sausage Sub</div>
+                <div class="menu-list-item__desc">Pizza sauce, sausage, bell peppers, onions.</div>
+              </div>
+              <div class="menu-list-item__price">$8.49</div>
+            </div>
+            <div class="menu-list-item">
+              <div class="menu-list-item__info">
+                <div class="menu-list-item__name">Pizza Sub</div>
+                <div class="menu-list-item__desc">Pizza sauce, pepperoni, Canadian bacon, bell peppers, onions.</div>
+              </div>
+              <div class="menu-list-item__price">$8.49</div>
+            </div>
+            <div class="menu-list-item">
+              <div class="menu-list-item__info">
+                <div class="menu-list-item__name">Ham &amp; Cheese Sub</div>
+                <div class="menu-list-item__desc">Pizza sauce, mushrooms, bell peppers, onions, Canadian bacon.</div>
+              </div>
+              <div class="menu-list-item__price">$8.49</div>
+            </div>
+            <div class="menu-list-item">
+              <div class="menu-list-item__info">
+                <div class="menu-list-item__name">Veggie Sub</div>
+                <div class="menu-list-item__desc">Pizza sauce, onions, tomatoes, mushrooms, olives, green bell peppers.
+                </div>
+              </div>
+              <div class="menu-list-item__price">$8.49</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SALADS -->
+        <div class="menu-tab-content" data-content="salads" role="tabpanel" id="tab-salads"
+          aria-labelledby="menutab-salads">
+          <div style="text-align:center;margin-bottom:24px;">
+            <p style="font-size:15px;color:var(--clr-text-light);">Lettuce consists of iceberg, green leaf, red leaf,
+              and romaine.</p>
+          </div>
+          <div class="menu-list" style="max-width:720px;margin:0 auto;">
+            <div class="menu-list-item">
+              <div class="menu-list-item__info">
+                <div class="menu-list-item__name">Garden Salad</div>
+                <div class="menu-list-item__desc">Lettuce, tomatoes, olives, mushrooms, bell peppers &amp; onions.</div>
+              </div>
+              <div class="menu-list-item__price">$3.59</div>
+            </div>
+            <div class="menu-list-item">
+              <div class="menu-list-item__info">
+                <div class="menu-list-item__name">Antipasto Salad</div>
+                <div class="menu-list-item__desc">Lettuce, tomatoes, olives, mushrooms, onions, bell peppers, pepperoni,
+                  and Canadian bacon.</div>
+              </div>
+              <div class="menu-list-item__price">$5.49</div>
+            </div>
+            <div class="menu-list-item">
+              <div class="menu-list-item__info">
+                <div class="menu-list-item__name">Chicken Salad</div>
+                <div class="menu-list-item__desc">Lettuce, mushrooms, onions, bell peppers, and chicken.</div>
+              </div>
+              <div class="menu-list-item__price">$4.89</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center;margin-top:48px;">
+          <a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank"
+            rel="noopener" class="btn btn--primary">Order Full Menu on Slice <span class="btn__arrow"
+              aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPECIALS -->
+    <section class="section section--warm reveal" id="specials">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Specials</span>
+          <h2 class="section__title">Carry Out &amp; Delivery Deals</h2>
+          <p class="section__subtitle">Save on every order. Upgrade sizes for just a couple bucks more.</p>
+        </div>
+        <div class="deals__grid">
+          <div class="deal-card">
+            <div class="deal-card__ribbon">Popular</div>
+            <div class="deal-card__img"><img
+                src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=400&q=50"
+                alt="Two medium pizza deal" width="400" height="250" loading="lazy" decoding="async"></div>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">2 Medium 12" Pizzas</h3>
+              <p class="deal-card__desc">Two medium pizzas with 3 toppings each.</p>
+              <div class="deal-card__fine">+$1.99/ea for Large · +$2.99/ea for XL</div>
+              <div class="deal-card__price-row"><span class="deal-card__price">$25.84</span><span
+                  class="deal-card__price-note">+ tax</span></div><a
+                href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank"
+                rel="noopener" class="deal-card__cta">Order This Deal</a>
+            </div>
+          </div>
+          <div class="deal-card">
+            <div class="deal-card__ribbon">Best Value</div>
+            <div class="deal-card__img"><img
+                src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&q=50" alt="Two large pizza deal"
+                width="400" height="250" loading="lazy" decoding="async"></div>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">2 Large 14" Pizzas</h3>
+              <p class="deal-card__desc">Two large pizzas with 3 toppings each.</p>
+              <div class="deal-card__fine">+$2.99/ea to upgrade to XL</div>
+              <div class="deal-card__price-row"><span class="deal-card__price">$29.82</span><span
+                  class="deal-card__price-note">+ tax</span></div><a
+                href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank"
+                rel="noopener" class="deal-card__cta">Order This Deal</a>
+            </div>
+          </div>
+          <div class="deal-card">
+            <div class="deal-card__ribbon">The Spread</div>
+            <div class="deal-card__img"><img
+                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=50" alt="Large combo deal"
+                width="400" height="250" loading="lazy" decoding="async"></div>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Large Combo</h3>
+              <p class="deal-card__desc">1 Large 2-topping pizza, garden salad, 12" garlic bread, and an order of hot
+                wings.</p>
+              <div class="deal-card__price-row"><span class="deal-card__price">$35.74</span><span
+                  class="deal-card__price-note">+ tax</span></div><a
+                href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank"
+                rel="noopener" class="deal-card__cta">Order This Deal</a>
+            </div>
+          </div>
+          <div class="deal-card">
+            <div class="deal-card__ribbon">Carry Out Only</div>
+            <div class="deal-card__img"><img
+                src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=50" alt="Carry out deal"
+                width="400" height="250" loading="lazy" decoding="async"></div>
+            <div class="deal-card__body">
+              <h3 class="deal-card__title">Large 14" + 1 Topping</h3>
+              <p class="deal-card__desc">Large cheese pizza + 1 topping. Carry out only.</p>
+              <div class="deal-card__price-row"><span class="deal-card__price">$12.99</span><span
+                  class="deal-card__price-note">+ tax</span></div><a href="tel:5628046490" class="deal-card__cta">Call:
+                (562) 804-6490</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section section--dark reveal" id="reviews">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">What People Say</span>
+          <h2 class="section__title">Lakewood's Favorite Pizza</h2>
+          <p class="section__subtitle">Don't take our word for it — here's what 880+ reviewers say.</p>
+        </div>
+        <div class="reviews__grid">
+          <div class="review-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">"Amazing Thai Chili and Tandoori Chicken pizzas. My fiancée was craving this
+              place after surgery and I drove 30 minutes to satisfy her craving. So good!"</p>
+            <div class="review-card__author">
+              <div class="review-card__avatar">A</div>
+              <div>
+                <div class="review-card__name">Ajay P.</div>
+                <div class="review-card__source">Google Review</div>
+              </div>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">"This place is our family's favorite. Folks literally come from Chicago and try
+              their Thai Chili thin crust pizza, and they were like 'We've never had anything like this!'"</p>
+            <div class="review-card__author">
+              <div class="review-card__avatar">S</div>
+              <div>
+                <div class="review-card__name">Sushant S.</div>
+                <div class="review-card__source">Google Review</div>
+              </div>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">"Really good pizza at a great price. The staff is super friendly. The chicken
+              tandoori pizza — I've had it over 10 times! The pizza dough is amazing!"</p>
+            <div class="review-card__author">
+              <div class="review-card__avatar">R</div>
+              <div>
+                <div class="review-card__name">Ricardo P.</div>
+                <div class="review-card__source">Google Review</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section class="section section--warm reveal" id="story">
+      <div class="container">
+        <div class="story__grid">
+          <div class="story__images">
+            <div class="story__img" style="height:400px;"><img
+                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=480&q=50"
+                alt="LaVentina's Pizza restaurant" width="480" height="400" loading="lazy" decoding="async"
+                style="height:100%;"></div>
+            <div class="story__img"><img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?w=320&q=50"
+                alt="Fresh pizza dough" width="320" height="200" loading="lazy" decoding="async" style="height:200px;">
+            </div>
+            <div class="story__img"><img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=320&q=50"
+                alt="Pizza oven" width="320" height="200" loading="lazy" decoding="async" style="height:200px;"></div>
+          </div>
+          <div class="story__content">
+            <span class="section__eyebrow">Our Story</span>
+            <h2 class="section__title">20 Years on Bellflower Blvd</h2>
+            <p class="story__text">LaVentina's has been serving the City of Lakewood for over 20 years. Our homemade
+              sauce is created using only the finest and freshest ingredients. We cut fresh vegetables daily and our
+              dough is prepared fresh every morning.</p>
+            <p class="story__text">We hand-toss every pizza, made to order. Our crust is thick and filling, our sauce is
+              unique and deliciously different, and our product is never oily. Give us a chance to satisfy your appetite
+              and you will not be disappointed.</p>
+            <div class="story__highlight">
+              <div class="story__highlight-icon" aria-hidden="true">🍕</div>
+              <div class="story__highlight-text"><strong>Fresh dough. Hand-tossed. Made to order.</strong>One of the
+                best sauces you'll find anywhere — that's not just us talking, that's 576 five-star ratings on Slice.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATERING -->
+    <section class="catering reveal" id="catering">
+      <div class="container">
+        <div class="catering__inner">
+          <span class="section__eyebrow" style="color:var(--clr-cheese);">Catering &amp; Events</span>
+          <h2 class="catering__title">Let Us Feed Your Next Event</h2>
+          <p class="catering__desc">Office lunches, birthday parties, game day spreads — we make feeding a crowd easy.
+            Call to set up a custom order for any group size.</p>
+          <div class="catering__features">
+            <div class="catering__feature">Custom pizza packages</div>
+            <div class="catering__feature">Wings, subs &amp; salads</div>
+            <div class="catering__feature">Delivery or pickup</div>
+          </div>
+          <a href="tel:5628046490" class="btn btn--primary">Call to Order: (562) 804-6490</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EMAIL -->
+    <div class="email-capture reveal">
+      <div class="container">
+        <div class="email-capture__inner">
+          <div class="email-capture__text">
+            <h3>Get Exclusive Deals &amp; New Menu Drops</h3>
+            <p>Be the first to know about weekly specials and limited-time Desi creations.</p>
+          </div>
+          <form class="email-capture__form" onsubmit="event.preventDefault();alert('Thanks! You\'re on the list.');">
+            <input type="email" class="email-capture__input" placeholder="Enter your email address" required
+              aria-label="Email address"><button type="submit" class="email-capture__submit">Sign Up</button></form>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <!-- GOURMET -->
-  <div class="menu-tab-content" data-content="gourmet" role="tabpanel" id="tab-gourmet" aria-labelledby="menutab-gourmet">
-    <div class="menu-grid">
-      <div class="menu-card"><div class="menu-card__tag">Best Seller</div><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=400&q=50" alt="Deluxe Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Deluxe Pizza</h3><p class="menu-card__desc">Pepperoni, sausage, Canadian bacon, mushrooms, bell peppers, onions, and olives.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__tag">Best Seller</div><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=50" alt="BBQ Chicken Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">BBQ Chicken Pizza</h3><p class="menu-card__desc">BBQ sauce, chicken, red onions, topped with mozzarella and garnished with fresh cilantro.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&q=50" alt="Tandoori Chicken Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Tandoori Chicken Pizza</h3><p class="menu-card__desc">Tandoori chicken, Thai chili, garlic, onions, tomatoes, with fresh cilantro and tandoori sauce.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__tag">Best Seller</div><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=400&q=50" alt="Meat Lover's Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Meat Lover's Pizza</h3><p class="menu-card__desc">Pepperoni, sausage, Canadian bacon, meatballs, and chicken.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=400&q=50" alt="Spicy Chicken Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Spicy Chicken Pizza</h3><p class="menu-card__desc">Chicken, pineapple, almonds, tandoori seasoning, and our Desi pizza sauce.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=50" alt="Pastrami Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Pastrami Pizza</h3><p class="menu-card__desc">Pastrami, pickles, mustard, cheese and sauce.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&q=50" alt="Neapolitan Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Neapolitan Pizza</h3><p class="menu-card__desc">Cheese or pepperoni with oregano, olive oil and Romano cheese.</p><div class="menu-card__footer"><span class="menu-card__price">$15.39</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
+    <!-- LOCATION -->
+    <section class="section section--warm reveal" id="location">
+      <div class="container">
+        <div class="section__header"><span class="section__eyebrow">Visit Us</span>
+          <h2 class="section__title">Find LaVentina's</h2>
+        </div>
+        <div class="location__grid">
+          <div class="location__map"><iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.5!2d-118.132!3d33.853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd2df3aa4791f9%3A0x4a4a4a4a4a4a4a4a!2s5806+Bellflower+Blvd%2C+Lakewood%2C+CA+90713!5e0!3m2!1sen!2sus!4v1"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="LaVentina's Pizza location"></iframe>
+          </div>
+          <div class="location__info">
+            <div class="location__detail">
+              <div class="location__detail-icon" aria-hidden="true">📍</div>
+              <div>
+                <div class="location__detail-label">Address</div>
+                <div class="location__detail-value">5806 Bellflower Blvd<br>Lakewood, CA 90713</div>
+              </div>
+            </div>
+            <div class="location__detail">
+              <div class="location__detail-icon" aria-hidden="true">📞</div>
+              <div>
+                <div class="location__detail-label">Phone</div>
+                <div class="location__detail-value"><a href="tel:5628046490">(562) 804-6490</a></div>
+              </div>
+            </div>
+            <div class="location__detail">
+              <div class="location__detail-icon" aria-hidden="true">🕐</div>
+              <div>
+                <div class="location__detail-label">Hours</div>
+                <ul class="location__hours-list">
+                  <li><span>Sunday – Thursday</span><span>11:00 AM – 8:00 PM</span></li>
+                  <li><span>Friday – Saturday</span><span>11:00 AM – 9:00 PM</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="location__detail">
+              <div class="location__detail-icon" aria-hidden="true">🚗</div>
+              <div>
+                <div class="location__detail-label">Delivery</div>
+                <div class="location__detail-value">Available via Slice</div>
+              </div>
+            </div>
+            <div class="location__delivery-note"><strong>Delivery:</strong> $3.25 delivery charge · $10.50 minimum +
+              tax. Order on Slice for 5% off online orders.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLOAT ORDER -->
+    <a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener"
+      class="float-order"><span class="float-order__icon" aria-hidden="true">🍕</span> Order on Slice — 5% Off</a>
+
+  </main>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div><a href="#home" class="nav__logo" aria-label="LaVentina's Pizza - Home">
+            <div class="nav__logo-icon" aria-hidden="true">LV</div>
+            <div class="nav__logo-text">LaVentina's <span>Pizza</span></div>
+          </a>
+          <p class="footer__brand-desc">Lakewood's home for handcrafted pizza since 2004. Classic pies, bold Desi fusion
+            flavors, and a community that feels like family.</p>
+          <div class="footer__social"><a href="https://www.facebook.com/" target="_blank" rel="noopener"
+              aria-label="Facebook"><span aria-hidden="true">f</span></a><a href="https://www.instagram.com/"
+              target="_blank" rel="noopener" aria-label="Instagram"><span aria-hidden="true">ig</span></a><a
+              href="https://www.yelp.com/" target="_blank" rel="noopener" aria-label="Yelp"><span
+                aria-hidden="true">y</span></a></div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Menu</h4>
+          <ul class="footer__links">
+            <li><a href="#menu">Classic Pizza</a></li>
+            <li><a href="#menu">Gourmet Pizza</a></li>
+            <li><a href="#menu">Desi Pizza</a></li>
+            <li><a href="#menu">Appetizers</a></li>
+            <li><a href="#menu">Oven-Baked Subs</a></li>
+            <li><a href="#menu">Salads</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank"
+                rel="noopener">Order Online</a></li>
+            <li><a href="#specials">Specials</a></li>
+            <li><a href="#catering">Catering</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#location">Location &amp; Hours</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__links">
+            <li><a href="tel:5628046490">(562) 804-6490</a></li>
+            <li>5806 Bellflower Blvd</li>
+            <li>Lakewood, CA 90713</li>
+            <li style="margin-top:8px;"><a
+                href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank"
+                rel="noopener" style="color:var(--clr-cheese);">Order on Slice →</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div>© 2026 LaVentina's Pizza. All rights reserved. Designed by <span
+            style="color:var(--clr-cheese);">Vonroflo</span></div>
+        <div class="footer__badges"><span class="footer__badge">Health Score A</span><span class="footer__badge"
+            style="background:rgba(245,200,66,0.15);color:var(--clr-cheese);">Est. 2004</span></div>
+      </div>
     </div>
-  </div>
+  </footer>
 
-  <!-- DESI -->
-  <div class="menu-tab-content" data-content="desi" role="tabpanel" id="tab-desi" aria-labelledby="menutab-desi">
-    <div style="text-align:center;margin-bottom:32px;padding:16px 24px;background:rgba(196,55,27,0.06);border-radius:var(--radius-md);max-width:680px;margin-left:auto;margin-right:auto;">
-      <p style="font-size:15px;color:var(--clr-text-light);line-height:1.6;">Our Desi pizzas have a <strong style="color:var(--clr-sauce);">spicy &amp; zesty homemade sauce</strong> with an Asian-Indian twist over our seasoned crust. Sauce does not contain garlic or onions.</p>
-    </div>
-    <div class="menu-grid">
-      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400&q=50" alt="Veggie Desi Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Veggie Desi Pizza</h3><p class="menu-card__desc">Desi sauce, mushrooms, bell peppers, onions, tomatoes, olives, jalapeños. Garnished with fresh cilantro over seasoned crust.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=50" alt="Chutney Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Chutney Pizza</h3><p class="menu-card__desc">Desi pizza sauce, topped with chutney and cheese over our seasoned crust.</p><div class="menu-card__footer"><span class="menu-card__price">$11.49</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=400&q=50" alt="Desi Thai Chili Pizza" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Desi Thai Chili Pizza</h3><p class="menu-card__desc">Desi sauce, chili, tomatoes, and onions. Garnished with fresh cilantro over seasoned crust.</p><div class="menu-card__footer"><span class="menu-card__price">$15.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-    </div>
-  </div>
+  <script>
+    // Nav scroll — throttled with rAF
+    const nav = document.getElementById('nav'); let ticking = false;
+    window.addEventListener('scroll', () => { if (!ticking) { requestAnimationFrame(() => { nav.classList.toggle('scrolled', window.scrollY > 50); ticking = false }); ticking = true } }, { passive: true });
 
-  <!-- APPETIZERS -->
-  <div class="menu-tab-content" data-content="appetizers" role="tabpanel" id="tab-appetizers" aria-labelledby="menutab-appetizers">
-    <div class="menu-grid">
-      <div class="menu-card"><div class="menu-card__tag">House Fav</div><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=400&q=50" alt="Garlic Cheese Bread" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Garlic Cheese Bread</h3><p class="menu-card__desc">Freshly baked bread loaded with garlic and melted cheese.</p><div class="menu-card__footer"><span class="menu-card__price">$5.19</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__tag">House Fav</div><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?w=400&q=50" alt="Garlic Dots" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Garlic Dots</h3><p class="menu-card__desc">Bite-sized dough balls tossed in garlic butter. Addictive.</p><div class="menu-card__footer"><span class="menu-card__price">$3.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=400&q=50" alt="Chicken Wings" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Chicken Wings</h3><p class="menu-card__desc">Whole chicken wings, oven baked.</p><div class="menu-card__footer"><span class="menu-card__price">$7.49</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-      <div class="menu-card"><div class="menu-card__img"><img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&q=50" alt="Pizza Roll" width="400" height="250" loading="lazy" decoding="async"></div><div class="menu-card__body"><h3 class="menu-card__name">Pizza Roll</h3><p class="menu-card__desc">Cheese &amp; your choice of three toppings, rolled and baked golden.</p><div class="menu-card__footer"><span class="menu-card__price">$7.99</span><button class="menu-card__add" aria-label="Order">+</button></div></div></div>
-    </div>
-    <div class="menu-list" style="max-width:680px;margin:32px auto 0;">
-      <div class="menu-list-item"><div class="menu-list-item__info"><div class="menu-list-item__name">Garlic Bread</div><div class="menu-list-item__desc">Topped with garlic, herb seasoning, baked to perfection.</div></div><div class="menu-list-item__price">$3.19</div></div>
-      <div class="menu-list-item"><div class="menu-list-item__info"><div class="menu-list-item__name">Plain Boneless Wings</div><div class="menu-list-item__desc">Crispy boneless wings, ready to dip.</div></div><div class="menu-list-item__price">$5.99</div></div>
-      <div class="menu-list-item"><div class="menu-list-item__info"><div class="menu-list-item__name">Potato Wedges</div><div class="menu-list-item__desc">Garlic Parmesan or plain.</div></div><div class="menu-list-item__price">$3.49</div></div>
-    </div>
-  </div>
+    // Reveal on scroll
+    const observer = new IntersectionObserver(e => { e.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target) } }) }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-  <!-- SUBS -->
-  <div class="menu-tab-content" data-content="subs" role="tabpanel" id="tab-subs" aria-labelledby="menutab-subs">
-    <div style="text-align:center;margin-bottom:24px;"><p style="font-size:15px;color:var(--clr-text-light);">All subs topped with mozzarella cheese and oven-baked. <strong style="color:var(--clr-sauce);">$8.49 each.</strong></p></div>
-    <div class="menu-list" style="max-width:720px;margin:0 auto;">
-      <div class="menu-list-item"><div class="menu-list-item__info"><div class="menu-list-item__name">Chicken Sub</div><div class="menu-list-item__desc">Pizza sauce, chicken, mushrooms, bell peppers, onions.</div></div><div class="menu-list-item__price">$8.49</div></div>
-      <div class="menu-list-item"><div class="menu-list-item__info"><div class="menu-list-item__name">BBQ Chicken Sub</div><div class="menu-list-item__desc">BBQ sauce, chicken, mushrooms, bell peppers, onions.</div></div><div class="menu-list-item__price">$8.49</div></div>
-      <div class="menu-list-item"><div class="menu-list-item__info"><div class="menu-list-item__name">Tandoori Chicken Sub</div><div class="menu-list-item__desc">Tandoori sauce, chilis, garlic, onions, tomatoes, tandoori chicken. Garnished with fresh cilantro.</div></div><div class="menu-list-item__price">$8.49</div></div>
-      <div class="menu-list-item"><div class="menu-list-item__info"><div class="menu-list-item__name">Deluxe Sub</div><div class="menu-list-item__desc">Pizza sauce, pepperoni, sausage, Canadian bacon, mushrooms, bell peppers, onions, olives.</div></div><div class="menu-list-item__price">$8.49</div></div>
-      <div class="menu-list-item"><div class="menu-list-item__info"><div class="menu-list-item__name">Meat Lover Sub</div><div class="menu-list-item__desc">Pizza sauce, pepperoni, sausage, Canadian bacon, meatball, chicken.</div></div><div class="menu-list-item__price">$8.49</div></div>
-      <div class="menu-list-item"><div class="menu-list-item__info"><div class="menu-list-item__name">Meatball Sub</div><div class="menu-list-item__desc">Pizza sauce and meatballs.</div></div><div class="menu-list-item__price">$8.49</div></div>
-      <div class="menu-list-item"><div class="menu-list-item__info"><div class="menu-list-item__name">Sausage Sub</div><div class="menu-list-item__desc">Pizza sauce, sausage, bell peppers, onions.</div></div><div class="menu-list-item__price">$8.49</div></div>
-      <div class="menu-list-item"><div class="menu-list-item__info"><div class="menu-list-item__name">Pizza Sub</div><div class="menu-list-item__desc">Pizza sauce, pepperoni, Canadian bacon, bell peppers, onions.</div></div><div class="menu-list-item__price">$8.49</div></div>
-      <div class="menu-list-item"><div class="menu-list-item__info"><div class="menu-list-item__name">Ham &amp; Cheese Sub</div><div class="menu-list-item__desc">Pizza sauce, mushrooms, bell peppers, onions, Canadian bacon.</div></div><div class="menu-list-item__price">$8.49</div></div>
-      <div class="menu-list-item"><div class="menu-list-item__info"><div class="menu-list-item__name">Veggie Sub</div><div class="menu-list-item__desc">Pizza sauce, onions, tomatoes, mushrooms, olives, green bell peppers.</div></div><div class="menu-list-item__price">$8.49</div></div>
-    </div>
-  </div>
+    // Menu tabs — event delegation
+    const tabList = document.querySelector('.menu-tabs');
+    function activateTab(tab) { document.querySelectorAll('.menu-tab').forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); t.setAttribute('tabindex', '-1') }); document.querySelectorAll('.menu-tab-content').forEach(c => c.classList.remove('active')); tab.classList.add('active'); tab.setAttribute('aria-selected', 'true'); tab.setAttribute('tabindex', '0'); tab.focus(); document.querySelector(`[data-content="${tab.dataset.tab}"]`).classList.add('active') }
+    tabList.addEventListener('click', e => { const tab = e.target.closest('.menu-tab'); if (tab) activateTab(tab) });
+    tabList.addEventListener('keydown', e => { const tabs = [...tabList.querySelectorAll('.menu-tab')]; const idx = tabs.indexOf(e.target); let next; if (e.key === 'ArrowRight') next = tabs[(idx + 1) % tabs.length]; else if (e.key === 'ArrowLeft') next = tabs[(idx - 1 + tabs.length) % tabs.length]; else if (e.key === 'Home') next = tabs[0]; else if (e.key === 'End') next = tabs[tabs.length - 1]; if (next) { e.preventDefault(); activateTab(next) } });
+    document.querySelectorAll('.menu-tab').forEach((t, i) => t.setAttribute('tabindex', i === 0 ? '0' : '-1'));
 
-  <!-- SALADS -->
-  <div class="menu-tab-content" data-content="salads" role="tabpanel" id="tab-salads" aria-labelledby="menutab-salads">
-    <div style="text-align:center;margin-bottom:24px;"><p style="font-size:15px;color:var(--clr-text-light);">Lettuce consists of iceberg, green leaf, red leaf, and romaine.</p></div>
-    <div class="menu-list" style="max-width:720px;margin:0 auto;">
-      <div class="menu-list-item"><div class="menu-list-item__info"><div class="menu-list-item__name">Garden Salad</div><div class="menu-list-item__desc">Lettuce, tomatoes, olives, mushrooms, bell peppers &amp; onions.</div></div><div class="menu-list-item__price">$3.59</div></div>
-      <div class="menu-list-item"><div class="menu-list-item__info"><div class="menu-list-item__name">Antipasto Salad</div><div class="menu-list-item__desc">Lettuce, tomatoes, olives, mushrooms, onions, bell peppers, pepperoni, and Canadian bacon.</div></div><div class="menu-list-item__price">$5.49</div></div>
-      <div class="menu-list-item"><div class="menu-list-item__info"><div class="menu-list-item__name">Chicken Salad</div><div class="menu-list-item__desc">Lettuce, mushrooms, onions, bell peppers, and chicken.</div></div><div class="menu-list-item__price">$4.89</div></div>
-    </div>
-  </div>
+    // Mobile nav — CSS class toggle
+    const toggle = document.querySelector('.nav__toggle'); const links = document.querySelector('.nav__links');
+    toggle.addEventListener('click', () => { const isOpen = links.classList.toggle('open'); toggle.setAttribute('aria-expanded', isOpen) });
+    links.querySelectorAll('a').forEach(a => { a.addEventListener('click', () => { links.classList.remove('open') }) });
 
-  <div style="text-align:center;margin-top:48px;">
-    <a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener" class="btn btn--primary">Order Full Menu on Slice <span class="btn__arrow" aria-hidden="true">→</span></a>
-  </div>
-</div></section>
-
-<!-- SPECIALS -->
-<section class="section section--warm reveal" id="specials"><div class="container">
-  <div class="section__header">
-    <span class="section__eyebrow">Specials</span>
-    <h2 class="section__title">Carry Out &amp; Delivery Deals</h2>
-    <p class="section__subtitle">Save on every order. Upgrade sizes for just a couple bucks more.</p>
-  </div>
-  <div class="deals__grid">
-    <div class="deal-card"><div class="deal-card__ribbon">Popular</div><div class="deal-card__img"><img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=400&q=50" alt="Two medium pizza deal" width="400" height="250" loading="lazy" decoding="async"></div><div class="deal-card__body"><h3 class="deal-card__title">2 Medium 12" Pizzas</h3><p class="deal-card__desc">Two medium pizzas with 3 toppings each.</p><div class="deal-card__fine">+$1.99/ea for Large · +$2.99/ea for XL</div><div class="deal-card__price-row"><span class="deal-card__price">$25.84</span><span class="deal-card__price-note">+ tax</span></div><a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener" class="deal-card__cta">Order This Deal</a></div></div>
-    <div class="deal-card"><div class="deal-card__ribbon">Best Value</div><div class="deal-card__img"><img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&q=50" alt="Two large pizza deal" width="400" height="250" loading="lazy" decoding="async"></div><div class="deal-card__body"><h3 class="deal-card__title">2 Large 14" Pizzas</h3><p class="deal-card__desc">Two large pizzas with 3 toppings each.</p><div class="deal-card__fine">+$2.99/ea to upgrade to XL</div><div class="deal-card__price-row"><span class="deal-card__price">$29.82</span><span class="deal-card__price-note">+ tax</span></div><a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener" class="deal-card__cta">Order This Deal</a></div></div>
-    <div class="deal-card"><div class="deal-card__ribbon">The Spread</div><div class="deal-card__img"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=50" alt="Large combo deal" width="400" height="250" loading="lazy" decoding="async"></div><div class="deal-card__body"><h3 class="deal-card__title">Large Combo</h3><p class="deal-card__desc">1 Large 2-topping pizza, garden salad, 12" garlic bread, and an order of hot wings.</p><div class="deal-card__price-row"><span class="deal-card__price">$35.74</span><span class="deal-card__price-note">+ tax</span></div><a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener" class="deal-card__cta">Order This Deal</a></div></div>
-    <div class="deal-card"><div class="deal-card__ribbon">Carry Out Only</div><div class="deal-card__img"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=50" alt="Carry out deal" width="400" height="250" loading="lazy" decoding="async"></div><div class="deal-card__body"><h3 class="deal-card__title">Large 14" + 1 Topping</h3><p class="deal-card__desc">Large cheese pizza + 1 topping. Carry out only.</p><div class="deal-card__price-row"><span class="deal-card__price">$12.99</span><span class="deal-card__price-note">+ tax</span></div><a href="tel:5628046490" class="deal-card__cta">Call: (562) 804-6490</a></div></div>
-  </div>
-</div></section>
-
-<!-- REVIEWS -->
-<section class="section section--dark reveal" id="reviews"><div class="container">
-  <div class="section__header">
-    <span class="section__eyebrow">What People Say</span>
-    <h2 class="section__title">Lakewood's Favorite Pizza</h2>
-    <p class="section__subtitle">Don't take our word for it — here's what 880+ reviewers say.</p>
-  </div>
-  <div class="reviews__grid">
-    <div class="review-card"><div class="review-card__stars">★★★★★</div><p class="review-card__text">"Amazing Thai Chili and Tandoori Chicken pizzas. My fiancée was craving this place after surgery and I drove 30 minutes to satisfy her craving. So good!"</p><div class="review-card__author"><div class="review-card__avatar">A</div><div><div class="review-card__name">Ajay P.</div><div class="review-card__source">Google Review</div></div></div></div>
-    <div class="review-card"><div class="review-card__stars">★★★★★</div><p class="review-card__text">"This place is our family's favorite. Folks literally come from Chicago and try their Thai Chili thin crust pizza, and they were like 'We've never had anything like this!'"</p><div class="review-card__author"><div class="review-card__avatar">S</div><div><div class="review-card__name">Sushant S.</div><div class="review-card__source">Google Review</div></div></div></div>
-    <div class="review-card"><div class="review-card__stars">★★★★★</div><p class="review-card__text">"Really good pizza at a great price. The staff is super friendly. The chicken tandoori pizza — I've had it over 10 times! The pizza dough is amazing!"</p><div class="review-card__author"><div class="review-card__avatar">R</div><div><div class="review-card__name">Ricardo P.</div><div class="review-card__source">Google Review</div></div></div></div>
-  </div>
-</div></section>
-
-<!-- STORY -->
-<section class="section section--warm reveal" id="story"><div class="container"><div class="story__grid">
-  <div class="story__images">
-    <div class="story__img" style="height:400px;"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=480&q=50" alt="LaVentina's Pizza restaurant" width="480" height="400" loading="lazy" decoding="async" style="height:100%;"></div>
-    <div class="story__img"><img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?w=320&q=50" alt="Fresh pizza dough" width="320" height="200" loading="lazy" decoding="async" style="height:200px;"></div>
-    <div class="story__img"><img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=320&q=50" alt="Pizza oven" width="320" height="200" loading="lazy" decoding="async" style="height:200px;"></div>
-  </div>
-  <div class="story__content">
-    <span class="section__eyebrow">Our Story</span>
-    <h2 class="section__title">20 Years on Bellflower Blvd</h2>
-    <p class="story__text">LaVentina's has been serving the City of Lakewood for over 20 years. Our homemade sauce is created using only the finest and freshest ingredients. We cut fresh vegetables daily and our dough is prepared fresh every morning.</p>
-    <p class="story__text">We hand-toss every pizza, made to order. Our crust is thick and filling, our sauce is unique and deliciously different, and our product is never oily. Give us a chance to satisfy your appetite and you will not be disappointed.</p>
-    <div class="story__highlight"><div class="story__highlight-icon" aria-hidden="true">🍕</div><div class="story__highlight-text"><strong>Fresh dough. Hand-tossed. Made to order.</strong>One of the best sauces you'll find anywhere — that's not just us talking, that's 576 five-star ratings on Slice.</div></div>
-  </div>
-</div></div></section>
-
-<!-- CATERING -->
-<section class="catering reveal" id="catering"><div class="container"><div class="catering__inner">
-  <span class="section__eyebrow" style="color:var(--clr-cheese);">Catering &amp; Events</span>
-  <h2 class="catering__title">Let Us Feed Your Next Event</h2>
-  <p class="catering__desc">Office lunches, birthday parties, game day spreads — we make feeding a crowd easy. Call to set up a custom order for any group size.</p>
-  <div class="catering__features">
-    <div class="catering__feature">Custom pizza packages</div>
-    <div class="catering__feature">Wings, subs &amp; salads</div>
-    <div class="catering__feature">Delivery or pickup</div>
-  </div>
-  <a href="tel:5628046490" class="btn btn--primary">Call to Order: (562) 804-6490</a>
-</div></div></section>
-
-<!-- EMAIL -->
-<div class="email-capture reveal"><div class="container"><div class="email-capture__inner">
-  <div class="email-capture__text"><h3>Get Exclusive Deals &amp; New Menu Drops</h3><p>Be the first to know about weekly specials and limited-time Desi creations.</p></div>
-  <form class="email-capture__form" onsubmit="event.preventDefault();alert('Thanks! You\'re on the list.');"><input type="email" class="email-capture__input" placeholder="Enter your email address" required aria-label="Email address"><button type="submit" class="email-capture__submit">Sign Up</button></form>
-</div></div></div>
-
-<!-- LOCATION -->
-<section class="section section--warm reveal" id="location"><div class="container">
-  <div class="section__header"><span class="section__eyebrow">Visit Us</span><h2 class="section__title">Find LaVentina's</h2></div>
-  <div class="location__grid">
-    <div class="location__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.5!2d-118.132!3d33.853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd2df3aa4791f9%3A0x4a4a4a4a4a4a4a4a!2s5806+Bellflower+Blvd%2C+Lakewood%2C+CA+90713!5e0!3m2!1sen!2sus!4v1" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="LaVentina's Pizza location"></iframe></div>
-    <div class="location__info">
-      <div class="location__detail"><div class="location__detail-icon" aria-hidden="true">📍</div><div><div class="location__detail-label">Address</div><div class="location__detail-value">5806 Bellflower Blvd<br>Lakewood, CA 90713</div></div></div>
-      <div class="location__detail"><div class="location__detail-icon" aria-hidden="true">📞</div><div><div class="location__detail-label">Phone</div><div class="location__detail-value"><a href="tel:5628046490">(562) 804-6490</a></div></div></div>
-      <div class="location__detail"><div class="location__detail-icon" aria-hidden="true">🕐</div><div><div class="location__detail-label">Hours</div><ul class="location__hours-list"><li><span>Sunday – Thursday</span><span>11:00 AM – 8:00 PM</span></li><li><span>Friday – Saturday</span><span>11:00 AM – 9:00 PM</span></li></ul></div></div>
-      <div class="location__detail"><div class="location__detail-icon" aria-hidden="true">🚗</div><div><div class="location__detail-label">Delivery</div><div class="location__detail-value">Available via Slice</div></div></div>
-      <div class="location__delivery-note"><strong>Delivery:</strong> $3.25 delivery charge · $10.50 minimum + tax. Order on Slice for 5% off online orders.</div>
-    </div>
-  </div>
-</div></section>
-
-<!-- FLOAT ORDER -->
-<a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener" class="float-order"><span class="float-order__icon" aria-hidden="true">🍕</span> Order on Slice — 5% Off</a>
-
-</main>
-<!-- FOOTER -->
-<footer class="footer"><div class="container">
-  <div class="footer__grid">
-    <div><a href="#home" class="nav__logo" aria-label="LaVentina's Pizza - Home"><div class="nav__logo-icon" aria-hidden="true">LV</div><div class="nav__logo-text">LaVentina's <span>Pizza</span></div></a><p class="footer__brand-desc">Lakewood's home for handcrafted pizza since 2004. Classic pies, bold Desi fusion flavors, and a community that feels like family.</p><div class="footer__social"><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><span aria-hidden="true">f</span></a><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><span aria-hidden="true">ig</span></a><a href="https://www.yelp.com/" target="_blank" rel="noopener" aria-label="Yelp"><span aria-hidden="true">y</span></a></div></div>
-    <div><h4 class="footer__heading">Menu</h4><ul class="footer__links"><li><a href="#menu">Classic Pizza</a></li><li><a href="#menu">Gourmet Pizza</a></li><li><a href="#menu">Desi Pizza</a></li><li><a href="#menu">Appetizers</a></li><li><a href="#menu">Oven-Baked Subs</a></li><li><a href="#menu">Salads</a></li></ul></div>
-    <div><h4 class="footer__heading">Quick Links</h4><ul class="footer__links"><li><a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener">Order Online</a></li><li><a href="#specials">Specials</a></li><li><a href="#catering">Catering</a></li><li><a href="#story">Our Story</a></li><li><a href="#location">Location &amp; Hours</a></li></ul></div>
-    <div><h4 class="footer__heading">Contact</h4><ul class="footer__links"><li><a href="tel:5628046490">(562) 804-6490</a></li><li>5806 Bellflower Blvd</li><li>Lakewood, CA 90713</li><li style="margin-top:8px;"><a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener" style="color:var(--clr-cheese);">Order on Slice →</a></li></ul></div>
-  </div>
-  <div class="footer__bottom">
-    <div>© 2026 LaVentina's Pizza. All rights reserved. Designed by <span style="color:var(--clr-cheese);">Vonroflo</span></div>
-    <div class="footer__badges"><span class="footer__badge">Health Score A</span><span class="footer__badge" style="background:rgba(245,200,66,0.15);color:var(--clr-cheese);">Est. 2004</span></div>
-  </div>
-</div></footer>
-
-<script>
-// Nav scroll — throttled with rAF
-const nav=document.getElementById('nav');let ticking=false;
-window.addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(()=>{nav.classList.toggle('scrolled',window.scrollY>50);ticking=false});ticking=true}},{passive:true});
-
-// Reveal on scroll
-const observer=new IntersectionObserver(e=>{e.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}})},{threshold:0.1,rootMargin:'0px 0px -60px 0px'});
-document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-
-// Menu tabs — event delegation
-const tabList=document.querySelector('.menu-tabs');
-function activateTab(tab){document.querySelectorAll('.menu-tab').forEach(t=>{t.classList.remove('active');t.setAttribute('aria-selected','false');t.setAttribute('tabindex','-1')});document.querySelectorAll('.menu-tab-content').forEach(c=>c.classList.remove('active'));tab.classList.add('active');tab.setAttribute('aria-selected','true');tab.setAttribute('tabindex','0');tab.focus();document.querySelector(`[data-content="${tab.dataset.tab}"]`).classList.add('active')}
-tabList.addEventListener('click',e=>{const tab=e.target.closest('.menu-tab');if(tab)activateTab(tab)});
-tabList.addEventListener('keydown',e=>{const tabs=[...tabList.querySelectorAll('.menu-tab')];const idx=tabs.indexOf(e.target);let next;if(e.key==='ArrowRight')next=tabs[(idx+1)%tabs.length];else if(e.key==='ArrowLeft')next=tabs[(idx-1+tabs.length)%tabs.length];else if(e.key==='Home')next=tabs[0];else if(e.key==='End')next=tabs[tabs.length-1];if(next){e.preventDefault();activateTab(next)}});
-document.querySelectorAll('.menu-tab').forEach((t,i)=>t.setAttribute('tabindex',i===0?'0':'-1'));
-
-// Mobile nav — CSS class toggle
-const toggle=document.querySelector('.nav__toggle');const links=document.querySelector('.nav__links');
-toggle.addEventListener('click',()=>{const isOpen=links.classList.toggle('open');toggle.setAttribute('aria-expanded',isOpen)});
-links.querySelectorAll('a').forEach(a=>{a.addEventListener('click',()=>{links.classList.remove('open')})});
-
-// Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor=>{anchor.addEventListener('click',e=>{const target=document.querySelector(anchor.getAttribute('href'));if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'})}})});
-</script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', e => { const target = document.querySelector(anchor.getAttribute('href')); if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }) } }) });
+  </script>
 </body>
+
 </html>
