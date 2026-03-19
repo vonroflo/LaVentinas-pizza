@@ -1545,6 +1545,10 @@
 
     /* RESPONSIVE */
     @media (max-width: 1024px) {
+      .hero__content {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
 
       .featured__grid,
       .story__grid,
@@ -1559,6 +1563,18 @@
 
       .footer__grid {
         grid-template-columns: 1fr 1fr;
+      }
+
+      .email-capture__inner {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+
+      .email-capture__form {
+        width: 100%;
+        max-width: 480px;
+        justify-content: center;
       }
     }
 
