@@ -461,6 +461,16 @@
       border-top: 1px solid rgba(245, 200, 66, 0.08);
     }
 
+    .trust-bar__title {
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--clr-cheese);
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
     .trust-bar__inner {
       display: flex;
       align-items: center;
@@ -1423,7 +1433,7 @@
     .float-order {
       position: fixed;
       bottom: 24px;
-      right: 24px;
+      left: 24px;
       z-index: 999;
       background: var(--clr-sauce);
       color: white;
@@ -1596,7 +1606,7 @@
 
       .float-order {
         bottom: 16px;
-        right: 16px;
+        left: 16px;
         padding: 14px 24px;
         font-size: 14px;
       }
@@ -1738,6 +1748,189 @@
         padding: 0 16px;
       }
     }
+
+    /* CHATBOT */
+    .chatbot {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 998;
+      font-family: var(--font-body);
+    }
+
+    .chatbot__toggle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--clr-basil);
+      color: white;
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(61, 122, 62, 0.4);
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .chatbot__toggle:hover {
+      background: var(--clr-basil-light);
+      transform: scale(1.05);
+    }
+
+    .chatbot__toggle.active {
+      background: var(--clr-sauce);
+      box-shadow: 0 4px 20px rgba(196, 55, 27, 0.4);
+    }
+
+    .chatbot__window {
+      position: absolute;
+      bottom: 72px;
+      right: 0;
+      width: 340px;
+      max-height: 480px;
+      background: var(--clr-warm-white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-heavy);
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+      border: 1px solid rgba(45, 36, 24, 0.1);
+    }
+
+    .chatbot__window.open {
+      display: flex;
+      animation: chatSlideUp 0.3s ease;
+    }
+
+    @keyframes chatSlideUp {
+      from {
+        opacity: 0;
+        transform: translateY(16px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .chatbot__header {
+      background: var(--clr-crust);
+      color: var(--clr-cream);
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .chatbot__avatar {
+      width: 40px;
+      height: 40px;
+      background: var(--clr-sauce);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+
+    .chatbot__title {
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .chatbot__subtitle {
+      font-size: 12px;
+      opacity: 0.7;
+    }
+
+    .chatbot__messages {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-height: 280px;
+    }
+
+    .chatbot__message {
+      max-width: 85%;
+      padding: 12px 16px;
+      border-radius: var(--radius-md);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .chatbot__message--bot {
+      background: rgba(45, 36, 24, 0.06);
+      color: var(--clr-text);
+      align-self: flex-start;
+      border-bottom-left-radius: 4px;
+    }
+
+    .chatbot__message--user {
+      background: var(--clr-sauce);
+      color: white;
+      align-self: flex-end;
+      border-bottom-right-radius: 4px;
+    }
+
+    .chatbot__message a {
+      color: var(--clr-sauce);
+      text-decoration: underline;
+      font-weight: 500;
+    }
+
+    .chatbot__message--bot a {
+      color: var(--clr-sauce);
+    }
+
+    .chatbot__quick-replies {
+      padding: 12px 16px 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      border-top: 1px solid rgba(45, 36, 24, 0.08);
+    }
+
+    .chatbot__quick-btn {
+      padding: 8px 14px;
+      background: rgba(196, 55, 27, 0.08);
+      color: var(--clr-sauce);
+      border: 1px solid rgba(196, 55, 27, 0.2);
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .chatbot__quick-btn:hover {
+      background: var(--clr-sauce);
+      color: white;
+      border-color: var(--clr-sauce);
+    }
+
+    @media (max-width: 480px) {
+      .chatbot {
+        bottom: 16px;
+        right: 16px;
+      }
+
+      .chatbot__window {
+        width: calc(100vw - 32px);
+        max-width: 340px;
+      }
+
+      .chatbot__toggle {
+        width: 52px;
+        height: 52px;
+        font-size: 24px;
+      }
+    }
   </style>
 </head>
 
@@ -1805,24 +1998,33 @@
       </div>
     </section>
 
-    <!-- TRUST BAR -->
+    <!-- TRUST BAR - Delivery Partners -->
     <div class="trust-bar">
+      <div class="trust-bar__title">Order Online</div>
       <div class="trust-bar__inner">
         <div class="trust-bar__item">
-          <div class="trust-bar__icon" aria-hidden="true">⭐</div>
-          <div><span class="trust-bar__highlight">576 Ratings</span> on Slice</div>
-        </div>
-        <div class="trust-bar__item">
-          <div class="trust-bar__icon" aria-hidden="true">🛡️</div>
-          <div>Health Score: <span class="trust-bar__highlight">A</span></div>
-        </div>
-        <div class="trust-bar__item">
-          <div class="trust-bar__icon" aria-hidden="true">🎉</div>
-          <div><span class="trust-bar__highlight">5% Off</span> Online Orders</div>
+          <div class="trust-bar__icon" aria-hidden="true">🍕</div>
+          <div><a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener"><span class="trust-bar__highlight">Slice</span> (Preferred)</a></div>
         </div>
         <div class="trust-bar__item">
           <div class="trust-bar__icon" aria-hidden="true">🚗</div>
-          <div>Delivery from <span class="trust-bar__highlight">$3.25</span></div>
+          <div><a href="https://www.doordash.com/store/laventina's-pizza-lakewood-61738/" target="_blank" rel="noopener"><span class="trust-bar__highlight">DoorDash</span></a></div>
+        </div>
+        <div class="trust-bar__item">
+          <div class="trust-bar__icon" aria-hidden="true">🍴</div>
+          <div><a href="https://www.ubereats.com/store/laventinas-pizza/JqHOrAA2XvioRyaRRSiuzw" target="_blank" rel="noopener"><span class="trust-bar__highlight">Uber Eats</span></a></div>
+        </div>
+        <div class="trust-bar__item">
+          <div class="trust-bar__icon" aria-hidden="true">🥡</div>
+          <div><a href="https://www.grubhub.com/restaurant/laventinas-pizza-5806-bellflower-blvd-lakewood/560172" target="_blank" rel="noopener"><span class="trust-bar__highlight">Grubhub</span></a></div>
+        </div>
+        <div class="trust-bar__item">
+          <div class="trust-bar__icon" aria-hidden="true">🍽️</div>
+          <div><a href="https://www.seamless.com/menu/laventinas-pizza-5806-bellflower-blvd-lakewood/560172" target="_blank" rel="noopener"><span class="trust-bar__highlight">Seamless</span></a></div>
+        </div>
+        <div class="trust-bar__item">
+          <div class="trust-bar__icon" aria-hidden="true">📦</div>
+          <div><a href="https://www.ubereats.com/store/laventinas-pizza/JqHOrAA2XvioRyaRRSiuzw" target="_blank" rel="noopener"><span class="trust-bar__highlight">Postmates</span></a></div>
         </div>
       </div>
     </div>
@@ -2538,7 +2740,7 @@
               <div class="location__detail-icon" aria-hidden="true">📍</div>
               <div>
                 <div class="location__detail-label">Address</div>
-                <div class="location__detail-value">5806 Bellflower Blvd<br>Lakewood, CA 90713</div>
+                <div class="location__detail-value"><a href="https://maps.app.goo.gl/3sQ64VuJrN7ao3kU9" target="_blank" rel="noopener">5806 Bellflower Blvd<br>Lakewood, CA 90713</a></div>
               </div>
             </div>
             <div class="location__detail">
@@ -2562,7 +2764,7 @@
               <div class="location__detail-icon" aria-hidden="true">🚗</div>
               <div>
                 <div class="location__detail-label">Delivery</div>
-                <div class="location__detail-value">Available via Slice</div>
+                <div class="location__detail-value"><a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener">Available via Slice</a></div>
               </div>
             </div>
             <div class="location__delivery-note"><strong>Delivery:</strong> $3.25 delivery charge · $10.50 minimum +
@@ -2593,21 +2795,8 @@
                 aria-hidden="true">y</span></a></div>
         </div>
         <div>
-          <h4 class="footer__heading">Menu</h4>
-          <ul class="footer__links">
-            <li><a href="#menu">Classic Pizza</a></li>
-            <li><a href="#menu">Gourmet Pizza</a></li>
-            <li><a href="#menu">Desi Pizza</a></li>
-            <li><a href="#menu">Appetizers</a></li>
-            <li><a href="#menu">Oven-Baked Subs</a></li>
-            <li><a href="#menu">Salads</a></li>
-          </ul>
-        </div>
-        <div>
           <h4 class="footer__heading">Quick Links</h4>
           <ul class="footer__links">
-            <li><a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank"
-                rel="noopener">Order Online</a></li>
             <li><a href="#specials">Specials</a></li>
             <li><a href="#catering">Catering</a></li>
             <li><a href="#story">Our Story</a></li>
@@ -2615,20 +2804,27 @@
           </ul>
         </div>
         <div>
+          <h4 class="footer__heading">Order Online</h4>
+          <ul class="footer__links">
+            <li><a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank" rel="noopener">Slice (5% off)</a></li>
+            <li><a href="https://www.doordash.com/store/laventina's-pizza-lakewood-61738/" target="_blank" rel="noopener">DoorDash</a></li>
+            <li><a href="https://www.ubereats.com/store/laventinas-pizza/JqHOrAA2XvioRyaRRSiuzw" target="_blank" rel="noopener">Uber Eats</a></li>
+            <li><a href="https://www.grubhub.com/restaurant/laventinas-pizza-5806-bellflower-blvd-lakewood/560172" target="_blank" rel="noopener">Grubhub</a></li>
+            <li><a href="https://www.seamless.com/menu/laventinas-pizza-5806-bellflower-blvd-lakewood/560172" target="_blank" rel="noopener">Seamless</a></li>
+          </ul>
+        </div>
+        <div>
           <h4 class="footer__heading">Contact</h4>
           <ul class="footer__links">
             <li><a href="tel:5628046490">(562) 804-6490</a></li>
-            <li>5806 Bellflower Blvd</li>
-            <li>Lakewood, CA 90713</li>
-            <li style="margin-top:8px;"><a
-                href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank"
-                rel="noopener" style="color:var(--clr-cheese);">Order on Slice →</a></li>
+            <li><a href="https://maps.app.goo.gl/3sQ64VuJrN7ao3kU9" target="_blank" rel="noopener">5806 Bellflower Blvd</a></li>
+            <li><a href="https://maps.app.goo.gl/3sQ64VuJrN7ao3kU9" target="_blank" rel="noopener">Lakewood, CA 90713</a></li>
           </ul>
         </div>
       </div>
       <div class="footer__bottom">
-        <div>© 2026 LaVentina's Pizza. All rights reserved. Designed by <span
-            style="color:var(--clr-cheese);">Vonroflo</span></div>
+        <div>© 2026 LaVentina's Pizza. All rights reserved. Designed by <a
+            href="https://vonroflo.com" target="_blank" rel="noopener" style="color:var(--clr-cheese);">Vonroflo</a></div>
         <div class="footer__badges"><span class="footer__badge">Health Score A</span><span class="footer__badge"
             style="background:rgba(245,200,66,0.15);color:var(--clr-cheese);">Est. 2004</span></div>
       </div>
@@ -2658,6 +2854,131 @@
 
     // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', e => { const target = document.querySelector(anchor.getAttribute('href')); if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }) } }) });
+  </script>
+
+  <!-- CHATBOT -->
+  <div class="chatbot" id="chatbot">
+    <div class="chatbot__window" id="chatWindow">
+      <div class="chatbot__header">
+        <div class="chatbot__avatar">🍕</div>
+        <div>
+          <div class="chatbot__title">LaVentina's Helper</div>
+          <div class="chatbot__subtitle">Ask us anything!</div>
+        </div>
+      </div>
+      <div class="chatbot__messages" id="chatMessages">
+        <div class="chatbot__message chatbot__message--bot">
+          Hi there! 👋 Welcome to LaVentina's Pizza! How can I help you today?
+        </div>
+      </div>
+      <div class="chatbot__quick-replies" id="quickReplies">
+        <button class="chatbot__quick-btn" data-question="hours">Hours</button>
+        <button class="chatbot__quick-btn" data-question="location">Location</button>
+        <button class="chatbot__quick-btn" data-question="delivery">Delivery</button>
+        <button class="chatbot__quick-btn" data-question="order">Order Now</button>
+        <button class="chatbot__quick-btn" data-question="menu">Menu</button>
+        <button class="chatbot__quick-btn" data-question="specials">Specials</button>
+      </div>
+    </div>
+    <button class="chatbot__toggle" id="chatToggle" aria-label="Open chat">
+      <span id="chatIcon">💬</span>
+    </button>
+  </div>
+
+  <script>
+    // Chatbot functionality
+    const chatToggle = document.getElementById('chatToggle');
+    const chatWindow = document.getElementById('chatWindow');
+    const chatMessages = document.getElementById('chatMessages');
+    const chatIcon = document.getElementById('chatIcon');
+    const quickReplies = document.getElementById('quickReplies');
+
+    const responses = {
+      hours: {
+        question: "What are your hours?",
+        answer: `We're open:<br><strong>Sun–Thu:</strong> 11:00 AM – 8:00 PM<br><strong>Fri–Sat:</strong> 11:00 AM – 9:00 PM<br><br>📞 <a href="tel:5628046490">Call us</a> or <a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank">order online</a>!`
+      },
+      location: {
+        question: "Where are you located?",
+        answer: `We're at <strong>5806 Bellflower Blvd, Lakewood, CA 90713</strong>. Right on Bellflower Blvd — serving the community since 2004!<br><br>📍 <a href="https://maps.app.goo.gl/3sQ64VuJrN7ao3kU9" target="_blank">Get Directions</a>`
+      },
+      delivery: {
+        question: "Do you deliver?",
+        answer: `Yes! We deliver via multiple services:<br>• <a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank"><strong>Slice</strong></a> (5% off!) - our preferred<br>• <a href="https://www.doordash.com/store/laventina's-pizza-lakewood-61738/" target="_blank">DoorDash</a><br>• <a href="https://www.ubereats.com/store/laventinas-pizza/JqHOrAA2XvioRyaRRSiuzw" target="_blank">Uber Eats / Postmates</a><br>• <a href="https://www.grubhub.com/restaurant/laventinas-pizza-5806-bellflower-blvd-lakewood/560172" target="_blank">Grubhub</a> / <a href="https://www.seamless.com/menu/laventinas-pizza-5806-bellflower-blvd-lakewood/560172" target="_blank">Seamless</a><br><br>Delivery: $3.25 charge, $10.50 minimum + tax.`
+      },
+      order: {
+        question: "I'd like to order",
+        answer: `Ready to order? Here are your options:<br><br>📞 <strong>Call us:</strong> <a href="tel:5628046490">(562) 804-6490</a><br><br>🌐 <strong>Order online:</strong><br>• <a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank">Slice</a> (5% off!)<br>• <a href="https://www.doordash.com/store/laventina's-pizza-lakewood-61738/" target="_blank">DoorDash</a><br>• <a href="https://www.ubereats.com/store/laventinas-pizza/JqHOrAA2XvioRyaRRSiuzw" target="_blank">Uber Eats</a><br>• <a href="https://www.grubhub.com/restaurant/laventinas-pizza-5806-bellflower-blvd-lakewood/560172" target="_blank">Grubhub</a><br>• <a href="https://www.seamless.com/menu/laventinas-pizza-5806-bellflower-blvd-lakewood/560172" target="_blank">Seamless</a>`
+      },
+      menu: {
+        question: "What's on the menu?",
+        answer: `We have a huge selection!<br><br>🍕 <strong>Pizzas:</strong> Classic, Specialty & our famous Desi Fusion line (Tandoori Chicken, Chutney, Thai Chili)<br>🥪 <strong>Subs:</strong> Hot & toasted<br>🥗 <strong>Salads:</strong> Fresh made<br>🍗 <strong>Wings:</strong> Plain & flavored<br>🧄 <strong>Sides:</strong> Garlic bread, dots, wedges<br><br><a href="#menu">View full menu</a> or <a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank">order on Slice</a>!`
+      },
+      specials: {
+        question: "Any specials?",
+        answer: `Yes! Check out our deals:<br><br>🍕 <strong>2 Large Pizzas:</strong> $28.99<br>🍕 <strong>2 Medium Pizzas:</strong> $22.99<br>🎉 <strong>Family Combo:</strong> Large 2-topping, salad, garlic bread & wings - $49.99<br>🥤 <strong>Daily Lunch:</strong> Personal pizza + drink - $7.99<br><br><a href="https://slicelife.com/restaurants/ca/lakewood/90713/laventina-s-pizza/menu" target="_blank">Order on Slice</a> for <strong>5% off</strong> all orders!`
+      },
+      catering: {
+        question: "Do you do catering?",
+        answer: `Yes! We cater events of all sizes — parties, corporate events, game days, you name it.<br><br>📞 Call us at <a href="tel:5628046490">(562) 804-6490</a> to set up a custom order for your group!`
+      },
+      phone: {
+        question: "What's your phone number?",
+        answer: `Our phone number is <a href="tel:5628046490"><strong>(562) 804-6490</strong></a>. Give us a call anytime during business hours!`
+      }
+    };
+
+    // Toggle chat window
+    chatToggle.addEventListener('click', () => {
+      const isOpen = chatWindow.classList.toggle('open');
+      chatToggle.classList.toggle('active', isOpen);
+      chatIcon.textContent = isOpen ? '✕' : '💬';
+      chatToggle.setAttribute('aria-label', isOpen ? 'Close chat' : 'Open chat');
+    });
+
+    // Handle quick replies
+    quickReplies.addEventListener('click', (e) => {
+      const btn = e.target.closest('.chatbot__quick-btn');
+      if (!btn) return;
+
+      const questionKey = btn.dataset.question;
+      const response = responses[questionKey];
+      if (!response) return;
+
+      // Add user message
+      addMessage(response.question, 'user');
+
+      // Add bot response after a short delay
+      setTimeout(() => {
+        addMessage(response.answer, 'bot');
+        updateQuickReplies(questionKey);
+      }, 400);
+    });
+
+    function addMessage(text, type) {
+      const msg = document.createElement('div');
+      msg.className = `chatbot__message chatbot__message--${type}`;
+      msg.innerHTML = text;
+      chatMessages.appendChild(msg);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function updateQuickReplies(lastQuestion) {
+      // Show contextual follow-ups based on last question
+      const followUps = {
+        hours: ['location', 'order', 'delivery'],
+        location: ['hours', 'order', 'delivery'],
+        delivery: ['order', 'specials', 'menu'],
+        order: ['specials', 'menu', 'hours'],
+        menu: ['order', 'specials', 'delivery'],
+        specials: ['order', 'menu', 'catering']
+      };
+
+      const suggestions = followUps[lastQuestion] || ['order', 'menu', 'hours'];
+      quickReplies.innerHTML = suggestions.map(key =>
+        `<button class="chatbot__quick-btn" data-question="${key}">${key.charAt(0).toUpperCase() + key.slice(1)}</button>`
+      ).join('') + `<button class="chatbot__quick-btn" data-question="phone">Call Us</button>`;
+    }
   </script>
 </body>
 
